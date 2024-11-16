@@ -1,0 +1,27 @@
+---
+categories:
+- 时空波动
+date: '2005-07-10 17:13:00'
+description: ''
+tags:
+- 偶像
+title: Archimedes(阿基米德)
+---
+ "给我一个支点，我可以撬动地球。"  
+  
+  "Eureka!"  
+  
+  "不要碰我的圆！"  
+  
+                                       By   Archimedes
+
+
+
+Archimedes (约287BC—212BC)是古希腊的科学家.在数学和力学领域有杰出贡献.于牛顿,高斯并称为人类历史上三位最杰出的数学家.关于Archimedes 家喻户晓的故事应该是帮助国王辨别真假皇冠从而发现了浮体定律.这是很了不起的工作,但是远不是他最了不起的工作.
+
+Archimedes最牛的工作是数学.早年在亚历山大学习时曾向欧几里得的弟子学过欧氏几何.他不仅掌握了欧几里得几何的严密逻辑推导的精髓而且更胜一筹的是他同时懂得如何发现新的东西.Archimedes把一块面积或体积看成是有重量的东西，分成许多非常小的长条或薄片，然后用已知面积或体积去平衡这些“元素”，找到了重心和支点，所求的面积或体积就可以用杠杆定律计算出来.他把这种方法看作是严格证明前的一种试探性工作,得到结果以后,还要用归谬法去证明它.这些工作远远超过了他的时代,直到近两千年后的微积分发明才被超过.牛顿说如果他之所以看的比别人远是因为站在巨人肩上,人们常说时势造英雄.的确,在科学史上,这是正确的,除了 Archimedes这个例外.Archimedes在没有前人工作的基础上,独自作出了如此大量深入的工作,就像是仅靠一个人就登上了月球.如果说高斯是数学之王,阿基米德可以称得上数学之神.
+
+     Archimedes最有资格说"高处不胜寒","独孤求败".但他似乎并没有功夫体味孤独.思考的乐趣超越了尘世的苦恼这就是神与人的区别.当敌军冲破家门来到他面前时,Archimedes却怕自己正在演算的图形被打乱,对士兵说"不要碰我的圆".他被士兵杀害了,他的思想却没有.
+
+[![Archimedes](http://boke9cheng.files.wordpress.com/2005/07/archimedes.jpeg)](http://boke9cheng.files.wordpress.com/2005/07/archimedes.jpeg) [![Archimedes2](http://boke9cheng.files.wordpress.com/2005/07/archimedes2.jpeg)](http://boke9cheng.files.wordpress.com/2005/07/archimedes2.jpeg)
+![]()
