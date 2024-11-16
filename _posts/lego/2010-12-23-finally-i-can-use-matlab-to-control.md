@@ -9,10 +9,13 @@ blogger_id: tag:blogger.com,1999:blog-8508490992555187365.post-53736375529090158
 blogger_orig_url: https://evolvingnxt.blogspot.com/2010/12/finally-i-can-use-matlab-to-control.html
 ---
 
-I got a license for matlab on my Macbook pro and I test to control nxt with <a href="http://www.mindstorms.rwth-aachen.de/trac/wiki/Download" target="_blank">RWTH Aachen MINDSTORMS NXT Toolbox</a>. With bluetooth it works very well though I haven't succeed to use USB. &nbsp;Anyway, bluetooth is all I need, so that's alright for me. One thing I should note is that in the installation instruction( http://www.mindstorms.rwth-aachen.de/trac/wiki/Download4.04 ) there is a small mistake: only after you execute<br />
-<blockquote>
-<tt>COM_OpenNXT('bluetooth.ini')</tt></blockquote>
-<br />
-you get the sign on NXT change from&nbsp;<strong>B&lt;</strong> to&nbsp;<strong>B&lt; &gt;</strong><br />
-<br />
+I got a license for MATLAB on my MacBook Pro, and I tested controlling NXT with [RWTH Aachen MINDSTORMS NXT Toolbox](https://www.mindstorms.rwth-aachen.de/trac/wiki/Download). With Bluetooth, it works very well, though I haven't succeeded in using USB. Anyway, Bluetooth is all I need, so that's alright for me.
+
+One thing to note is that in the installation instructions ([link here](https://www.mindstorms.rwth-aachen.de/trac/wiki/Download4.04)), there is a small mistake: only after you execute
+
+```matlab
+COM_OpenNXT('bluetooth.ini')
+```
+You get the sign on NXT change from **B<** to **B< >**.
+
 I will experiment with the power of Matlab from now on!
