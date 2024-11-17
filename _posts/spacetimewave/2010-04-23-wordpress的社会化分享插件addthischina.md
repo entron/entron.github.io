@@ -16,7 +16,7 @@ title: Wordpress的社会化分享插件addthischina
 
 
 
-http://addthis.org.cn/
+https://addthis.org.cn/
 
 
 

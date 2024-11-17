@@ -34,7 +34,7 @@ Google sites很好了帮我解决我以上所有的问题。Google  sites是一
 
 
 
-就介绍这么多，具体你要自己用才能知道。这里是我的展示网站：<http://sites.google.com/site/sitesforyourscienceprojects>
+就介绍这么多，具体你要自己用才能知道。这里是我的展示网站：<https://sites.google.com/site/sitesforyourscienceprojects>
 
 
 
@@ -42,15 +42,15 @@ Google sites很好了帮我解决我以上所有的问题。Google  sites是一
 
 
 
-http://basecamphq.com/
+https://basecamphq.com/
 
 
 
-http://www.zoho.com/
+https://www.zoho.com/
 
 
 
-http://www.atlassian.com/software/confluence/
+https://www.atlassian.com/software/confluence/
 
 
 

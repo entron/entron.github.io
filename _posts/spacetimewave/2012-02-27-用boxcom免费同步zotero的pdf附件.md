@@ -22,7 +22,7 @@ Zotero提供了100MB的免费空间来同步你下载的文献的pdf文件。超
 
 ”Your WebDAV server must be configured to serve files without extensions and files with .prop extensions in order to work with Zotero.”
 
-可以试试[这个解决方法](http://forums.zotero.org/discussion/20351/your-webdav-server-must-be-configured-to-serve-files-without-extensions-and-files-with-prop-extensi/)：
+可以试试[这个解决方法](https://forums.zotero.org/discussion/20351/your-webdav-server-must-be-configured-to-serve-files-without-extensions-and-files-with-prop-extensi/)：
 
 “You can try going to about:config in the Firefox address bar (or clicking "Open about:config" from the Advanced pane of the preferences in Standalone) and setting extensions.zotero.sync.storage.verified to true. ”
 

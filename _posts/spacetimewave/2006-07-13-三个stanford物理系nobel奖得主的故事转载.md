@@ -427,11 +427,11 @@ Professor Douglas Osheroff
 Professor Steven Chu   
 Professor Robert Laughlin   
 参考资料： 
-The Nobel Prize in Physics: <http://www.nobel.se/physics/laureates/>   
+The Nobel Prize in Physics: <https://www.nobel.se/physics/laureates/>   
 Winners of the Nobel Prize in Physics:   
-<http://almaz.com/nobel/physics/physics>.   
+<https://almaz.com/nobel/physics/physics>.   
 html   
-Faculty in Stanford University Department of Physics: <http://www.stanford>.   
+Faculty in Stanford University Department of Physics: <https://www.stanford>.   
 edu/dept/physics/people/faculty.html  
    
  

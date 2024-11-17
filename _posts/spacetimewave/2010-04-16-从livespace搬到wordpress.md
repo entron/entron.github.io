@@ -17,7 +17,7 @@ title: 从Livespace搬到Wordpress
 
 
 
-http://spacetimewave.net
+https://spacetimewave.net
 
 
 
@@ -27,7 +27,7 @@ http://spacetimewave.net
 
 这个可以通过一个Perl脚本完成。网址是
 
-http://code.google.com/p/live\-space\-mover/
+https://code.google.com/p/live\-space\-mover/
 2. 在新博客上的更新在Live update上同步（也就是在我的live profile上显示新的博客更新）。
 
 这个只需要在live profile的左下角的web activies中添加你的博客网址就行（希望如此）。web activies中有很多类型，需要添加的是custom blog.

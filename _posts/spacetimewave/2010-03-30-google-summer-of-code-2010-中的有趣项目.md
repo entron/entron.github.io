@@ -54,7 +54,7 @@ Google  Summer of Code 2010 昨天开始了。
 
 
 
-<http://socghop.appspot.com/gsoc/program/accepted_orgs/google/gsoc2010>
+<https://socghop.appspot.com/gsoc/program/accepted_orgs/google/gsoc2010>
 
 
 
@@ -78,7 +78,7 @@ ASCEND
 
 
 
-http://ascendwiki.cheme.cmu.edu/Student\_projects
+https://ascendwiki.cheme.cmu.edu/Student\_projects
 
 
 
@@ -102,7 +102,7 @@ Berkman Center at Harvard University
 
 
 
-<http://cyber.law.harvard.edu/>
+<https://cyber.law.harvard.edu/>
 
 
 
@@ -146,7 +146,7 @@ Grameen Foundation
 
 
 
-[http://www.mifos.org/about/how\-mifos\-is\-used](http://www.mifos.org/about/how-mifos-is-used)
+[https://www.mifos.org/about/how\-mifos\-is\-used](https://www.mifos.org/about/how-mifos-is-used)
 
 
 
@@ -172,7 +172,7 @@ of Life Project
 
 
 
-<http://eol.org/>
+<https://eol.org/>
 
 
 
@@ -212,8 +212,8 @@ Open Source Computer Vision Library
 
 
 
-<http://nuigroup.com/>
-<http://opencv.willowgarage.com/wiki/>
+<https://nuigroup.com/>
+<https://opencv.willowgarage.com/wiki/>
 
 
 
@@ -221,7 +221,7 @@ Open Source Computer Vision Library
 
 我相信10年之后人们不会再使用鼠标（甚至键盘！），而是将以类似于这个项目中研究的方式使用电脑。现阶段，也是最初级阶段，多点触控（Multitouch）是热点。自然用户界面的一个很形象的视频在微软的Natal项目的主页可以看到：
 
-[http://www.xbox.com/en\-us/live/projectnatal/](http://www.xbox.com/en-us/live/projectnatal/)
+[https://www.xbox.com/en\-us/live/projectnatal/](https://www.xbox.com/en-us/live/projectnatal/)
 
 
 
@@ -271,15 +271,15 @@ Ushahidi
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
 
-<http://www.ushahidi.com/>
+<https://www.ushahidi.com/>
 
 
 
-是一个应对灾难的系统。前两天刚在报纸上看到这个网站的[介绍](http://www.nytimes.com/2010/03/14/weekinreview/14giridharadas.html?scp=1&sq=ushahidi&st=cse)：
+是一个应对灾难的系统。前两天刚在报纸上看到这个网站的[介绍](https://www.nytimes.com/2010/03/14/weekinreview/14giridharadas.html?scp=1&sq=ushahidi&st=cse)：
 
 
 
-[http://www.nytimes.com/2010/03/14/weekinreview/14giridharadas.html?scp\=1\&sq\=ushahidi\&st\=cse](http://www.nytimes.com/2010/03/14/weekinreview/14giridharadas.html?scp=1&sq=ushahidi&st=cse)
+[https://www.nytimes.com/2010/03/14/weekinreview/14giridharadas.html?scp\=1\&sq\=ushahidi\&st\=cse](https://www.nytimes.com/2010/03/14/weekinreview/14giridharadas.html?scp=1&sq=ushahidi&st=cse)
 
 
 
@@ -291,7 +291,7 @@ PS: 基于这个系统我建了一个网上数据库记录网友报道的乞讨�
 
 
 
-<http://jiejiu.betterchina.info/>
+<https://jiejiu.betterchina.info/>
 
 
 

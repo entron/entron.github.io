@@ -8,7 +8,7 @@ tags:
 - 学术
 title: Nature's  Oscars 2006
 ---
-http://www.nature.com/news/specials/oscars2006/index.html
+https://www.nature.com/news/specials/oscars2006/index.html
 
 
 

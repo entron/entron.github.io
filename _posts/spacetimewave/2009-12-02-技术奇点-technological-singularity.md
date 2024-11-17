@@ -13,9 +13,9 @@ title: 技术奇点 （Technological singularity）
   
 对这个概念感兴趣的可以参考阅读：  
   
-http://en.wikipedia.org/wiki/Technological\_singularity  
+https://en.wikipedia.org/wiki/Technological\_singularity  
   
-http://www.nytimes.com/2009/05/24/weekinreview/24markoff.html  
+https://www.nytimes.com/2009/05/24/weekinreview/24markoff.html  
   
 [![](/assets/spacetimewave/2009/12/pptmooreslawai.jpg)](/assets/spacetimewave/2009/12/pptmooreslawai.jpg)  
 

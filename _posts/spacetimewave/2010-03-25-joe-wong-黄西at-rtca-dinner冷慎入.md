@@ -8,13 +8,13 @@ tags:
 - 时事
 title: Joe Wong （黄西）at RTCA Dinner（冷，慎入）
 ---
-\[youtube http://www.youtube.com/watch?v\=buSv1jjAels\&hl\=en\_US\&fs\=1\&]
+\[youtube https://www.youtube.com/watch?v\=buSv1jjAels\&hl\=en\_US\&fs\=1\&]
 
-超级幽默的一个家伙！不过我要承认我是看了[script](http://74.53.4.74/article_t/QueerNews/12525475.html)才基本全看懂的。黄西背称为美国小沈阳。是我们中科院的校友，长相和讲笑话的神情都让我想起了封师兄。下面是他的介绍：
+超级幽默的一个家伙！不过我要承认我是看了[script](https://74.53.4.74/article_t/QueerNews/12525475.html)才基本全看懂的。黄西背称为美国小沈阳。是我们中科院的校友，长相和讲笑话的神情都让我想起了封师兄。下面是他的介绍：
 
 
 
-<http://www.hudong.com/wiki/%E9%BB%84%E8%A5%BF>
+<https://www.hudong.com/wiki/%E9%BB%84%E8%A5%BF>
 
 
 
@@ -22,7 +22,7 @@ title: Joe Wong （黄西）at RTCA Dinner（冷，慎入）
 
 
 
-[Colbert Roasts President Bush \- 2006 White House Correspondents Dinner](http://video.google.de/videoplay?docid=-869183917758574879&ei=Abo2SqXpEdL2-Abs0_yzCQ&q=colbert+bush+correspondents+dinner&hl=de#)
+[Colbert Roasts President Bush \- 2006 White House Correspondents Dinner](https://video.google.de/videoplay?docid=-869183917758574879&ei=Abo2SqXpEdL2-Abs0_yzCQ&q=colbert+bush+correspondents+dinner&hl=de#)
 
 
 
@@ -30,7 +30,7 @@ title: Joe Wong （黄西）at RTCA Dinner（冷，慎入）
 
 
 
-[President Obama at the White House Correspondents' Dinner](http://www.youtube.com/watch?v=T0GwZFAV1Lw)
+[President Obama at the White House Correspondents' Dinner](https://www.youtube.com/watch?v=T0GwZFAV1Lw)
 
 
 

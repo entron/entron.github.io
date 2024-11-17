@@ -20,7 +20,7 @@ Windows Live Writer 是一个可以方便在电脑上编辑blog的软件。刚�
 
 
 
-<http://ydwangcd.spaces.live.com/>
+<https://ydwangcd.spaces.live.com/>
 
 
  

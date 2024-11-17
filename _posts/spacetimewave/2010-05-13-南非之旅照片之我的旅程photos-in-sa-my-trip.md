@@ -8,11 +8,11 @@ tags:
 - 五湖四海
 title: 南非之旅照片之“我的旅程|Photos in SA “My Trip”
 ---
-在[前三个博文](http://spacetimewave.net/tag/%E5%8D%97%E9%9D%9E)里，我是按照主题整理的照片。现在我打算按照我自己的旅行经历整理一些照片贴上来。
+在[前三个博文](https://spacetimewave.net/tag/%E5%8D%97%E9%9D%9E)里，我是按照主题整理的照片。现在我打算按照我自己的旅行经历整理一些照片贴上来。
 
 
 
-In [the previous 3 blog entries](http://spacetimewave.net/tag/%E5%8D%97%E9%9D%9E) I organized the photos with certain topics, but in this one I will choose a few photos based on my own experience of this trip.
+In [the previous 3 blog entries](https://spacetimewave.net/tag/%E5%8D%97%E9%9D%9E) I organized the photos with certain topics, but in this one I will choose a few photos based on my own experience of this trip.
 
 
 

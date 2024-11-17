@@ -13,7 +13,7 @@ title: Nobel Prize Announcements 2006
   
 生理医学奖授予Andrew Z. Fire 和 Craig C. Mello "for their discovery of RNA interference \- gene silencing by double\-stranded RNA"; 物理奖授予John C. Mather 和 George F. Smoot "for their discovery of the blackbody form and anisotropy of the cosmic microwave background radiation"。化学奖和经济学奖将分别在十月4号和9号（GMT）公布。  
   
-http://nobelprize.org/  
+https://nobelprize.org/  
   
   
   

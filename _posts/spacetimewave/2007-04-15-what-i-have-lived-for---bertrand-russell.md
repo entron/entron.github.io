@@ -7,9 +7,9 @@ tags:
 - 读书
 title: What I Have Lived For --Bertrand Russell
 ---
-     上个学期买了一本中英对照的“[罗素智慧快乐书](http://product.dangdang.com/product.aspx?product_id=9179683)”，其中的内容选自《征服幸福》，《婚姻与道德》（获诺贝尔文学奖）、《教育和社会秩序》、《我的信仰》。书中选的文章正如书名一样充满了智慧，读过后应为想明白了一些问题所以就会更加快乐。第一篇文章What I Have Lived For我读了几十遍仍很想再读，从网上找来贴在这里：
+     上个学期买了一本中英对照的“[罗素智慧快乐书](https://product.dangdang.com/product.aspx?product_id=9179683)”，其中的内容选自《征服幸福》，《婚姻与道德》（获诺贝尔文学奖）、《教育和社会秩序》、《我的信仰》。书中选的文章正如书名一样充满了智慧，读过后应为想明白了一些问题所以就会更加快乐。第一篇文章What I Have Lived For我读了几十遍仍很想再读，从网上找来贴在这里：
  
-（下文摘自[http://ahi791103\.spaces.live.com/blog/cns!C5EF1360820FA814!666\.entry](http://ahi791103.spaces.live.com/blog/cns!C5EF1360820FA814!666.entry)）
+（下文摘自[https://ahi791103\.spaces.live.com/blog/cns!C5EF1360820FA814!666\.entry](https://ahi791103.spaces.live.com/blog/cns!C5EF1360820FA814!666.entry)）
 
 ***What I Have Lived For***
 
