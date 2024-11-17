@@ -17,5 +17,5 @@ I use [Zotero](http://www.zotero.org/) (which by the way is the best software of
 
 
 
-[physrevzoterolyx.bst](http://boke.9cheng.de/wp-content/uploads/2010/05/physrevzoterolyx.bst_1.zip)
+[physrevzoterolyx.bst](/assets/spacetimewave/2010/05/physrevzoterolyx.bst_1.zip)
 

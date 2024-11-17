@@ -100,7 +100,7 @@ You can find some very cool restaurant in this town. Two photos taken in one of 
 
 
 [![](/assets/spacetimewave/2010/05/food3.jpg "food3")](/assets/spacetimewave/2010/05/food3.jpg)
-[![](http://boke.9cheng.de/wp-content/uploads/2010/05/food2.jpg "food2")](http://boke.9cheng.de/wp-content/uploads/2010/05/food2.jpg)
+[![](/assets/spacetimewave/2010/05/food2.jpg "food2")](/assets/spacetimewave/2010/05/food2.jpg)
 
 
 
