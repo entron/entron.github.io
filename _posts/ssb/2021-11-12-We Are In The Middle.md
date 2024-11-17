@@ -13,7 +13,7 @@ Universe Size Comparison 3D by Harry Evett
 
 {% include embed/youtube.html id='i93Z7zljQ7I' %}
 
-DNA animations by [wehi.tv](http://wehi.tv)
+DNA animations by [wehi.tv](https://wehi.tv)
 
 {% include embed/youtube.html id='7Hk9jct2ozY' %}
 
