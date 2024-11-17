@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/workspace
-      - bundle_cache:/usr/local/bundle
+      - jekyll_cache:/workspace/.jekyll-cache # Use a named volume for the cache
     ports:
       - "4000:4000"
     environment:
@@ -13,4 +13,4 @@ services:
     command: bundle exec jekyll serve --host=0.0.0.0
 
 volumes:
-  bundle_cache:
+  jekyll_cache:
