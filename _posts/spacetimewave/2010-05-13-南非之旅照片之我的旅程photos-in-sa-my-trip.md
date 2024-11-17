@@ -24,7 +24,7 @@ All right, the first one is a photo taken on the airplane. The colors of the clo
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/on-the-way.jpg "on-the-way")](http://boke9cheng.files.wordpress.com/2010/05/on-the-way.jpg)
+[![](/assets/spacetimewave/2010/05/on-the-way.jpg "on-the-way")](/assets/spacetimewave/2010/05/on-the-way.jpg)
 
 
 
@@ -37,9 +37,9 @@ Most of the time we stayed in Stellenbosch, one of the oldest colonial town in S
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/hotel.jpg "hotel")](http://boke9cheng.files.wordpress.com/2010/05/hotel.jpg)
-[![](http://boke9cheng.files.wordpress.com/2010/05/stellenbosch1.jpg "stellenbosch1")](http://boke9cheng.files.wordpress.com/2010/05/stellenbosch1.jpg)
-[![](http://boke9cheng.files.wordpress.com/2010/05/stellenbosch2.jpg "stellenbosch2")](http://boke9cheng.files.wordpress.com/2010/05/stellenbosch2.jpg)
+[![](/assets/spacetimewave/2010/05/hotel.jpg "hotel")](/assets/spacetimewave/2010/05/hotel.jpg)
+[![](/assets/spacetimewave/2010/05/stellenbosch1.jpg "stellenbosch1")](/assets/spacetimewave/2010/05/stellenbosch1.jpg)
+[![](/assets/spacetimewave/2010/05/stellenbosch2.jpg "stellenbosch2")](/assets/spacetimewave/2010/05/stellenbosch2.jpg)
 
 
 
@@ -51,7 +51,7 @@ There are lots of colonial style house in Stellenbosch like this:
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/colony.jpg "colony")](http://boke9cheng.files.wordpress.com/2010/05/colony.jpg)
+[![](/assets/spacetimewave/2010/05/colony.jpg "colony")](/assets/spacetimewave/2010/05/colony.jpg)
 
 
 
@@ -67,7 +67,7 @@ Officially there is no race separation any more in SA, but you can still feel th
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/grassland.jpg "grassland")](http://boke9cheng.files.wordpress.com/2010/05/grassland.jpg)
+[![](/assets/spacetimewave/2010/05/grassland.jpg "grassland")](/assets/spacetimewave/2010/05/grassland.jpg)
 
 
 
@@ -83,7 +83,7 @@ The offices we used in *STIAS* of Stellenbosch Uni is super as showed in this ph
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/office.jpg "office")](http://boke9cheng.files.wordpress.com/2010/05/office.jpg)
+[![](/assets/spacetimewave/2010/05/office.jpg "office")](/assets/spacetimewave/2010/05/office.jpg)
 
 
 
@@ -99,7 +99,7 @@ You can find some very cool restaurant in this town. Two photos taken in one of 
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/food3.jpg "food3")](http://boke9cheng.files.wordpress.com/2010/05/food3.jpg)
+[![](/assets/spacetimewave/2010/05/food3.jpg "food3")](/assets/spacetimewave/2010/05/food3.jpg)
 [![](http://boke.9cheng.de/wp-content/uploads/2010/05/food2.jpg "food2")](http://boke.9cheng.de/wp-content/uploads/2010/05/food2.jpg)
 
 
@@ -112,7 +112,7 @@ One weekend we drove more than 700km from Stellenbosch to Addo national park. Th
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/addohotel.jpg "addohotel")](http://boke9cheng.files.wordpress.com/2010/05/addohotel.jpg)
+[![](/assets/spacetimewave/2010/05/addohotel.jpg "addohotel")](/assets/spacetimewave/2010/05/addohotel.jpg)
 
 
 
@@ -128,7 +128,7 @@ The hostel was within a local family's house and in the middle of nowhere. The d
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/addo_breakfirst.jpg "addo_breakfirst")](http://boke9cheng.files.wordpress.com/2010/05/addo_breakfirst.jpg)
+[![](/assets/spacetimewave/2010/05/addo_breakfirst.jpg "addo_breakfirst")](/assets/spacetimewave/2010/05/addo_breakfirst.jpg)
 
 
 
@@ -144,7 +144,7 @@ On the way back to Stellenbosch we stopped by a beautiful see shore with almost 
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/seeside.jpg "seeside")](http://boke9cheng.files.wordpress.com/2010/05/seeside.jpg)
+[![](/assets/spacetimewave/2010/05/seeside.jpg "seeside")](/assets/spacetimewave/2010/05/seeside.jpg)
 
 
 
@@ -160,7 +160,7 @@ In the weekend before we left SA, we went to Cape Point and Cape Town. The photo
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/capetown_d9.jpg "capetown_d9")](http://boke9cheng.files.wordpress.com/2010/05/capetown_d9.jpg)
+[![](/assets/spacetimewave/2010/05/capetown_d9.jpg "capetown_d9")](/assets/spacetimewave/2010/05/capetown_d9.jpg)
 
 
 
@@ -176,7 +176,7 @@ Losts of people rent this kind of car in Cape Town
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/rentacar.jpg "rentacar")](http://boke9cheng.files.wordpress.com/2010/05/rentacar.jpg)
+[![](/assets/spacetimewave/2010/05/rentacar.jpg "rentacar")](/assets/spacetimewave/2010/05/rentacar.jpg)
 
 
 
@@ -192,7 +192,7 @@ Wow, now this is the south most point of Africa the Cape Point. The Indian ocean
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/capepoint_2oceans.jpg "capepoint_2oceans")](http://boke9cheng.files.wordpress.com/2010/05/capepoint_2oceans.jpg)
+[![](/assets/spacetimewave/2010/05/capepoint_2oceans.jpg "capepoint_2oceans")](/assets/spacetimewave/2010/05/capepoint_2oceans.jpg)
 
 
 
@@ -208,7 +208,7 @@ The land near Cape Point has the highest plants diversity in the world. This pho
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/capepoint_flowers.jpg "capepoint_flowers")](http://boke9cheng.files.wordpress.com/2010/05/capepoint_flowers.jpg)
+[![](/assets/spacetimewave/2010/05/capepoint_flowers.jpg "capepoint_flowers")](/assets/spacetimewave/2010/05/capepoint_flowers.jpg)
 
 
 
@@ -224,7 +224,7 @@ The glorious sunset near Cape Point. In the photos are my two colleagues.
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/capepoint_sunset.jpg "capepoint_sunset")](http://boke9cheng.files.wordpress.com/2010/05/capepoint_sunset.jpg)
+[![](/assets/spacetimewave/2010/05/capepoint_sunset.jpg "capepoint_sunset")](/assets/spacetimewave/2010/05/capepoint_sunset.jpg)
 
 
 
@@ -240,5 +240,5 @@ Of course we need to eat some see food after this trip:)
 
 
 
-[![](http://boke9cheng.files.wordpress.com/2010/05/food1.jpg "food1")](http://boke9cheng.files.wordpress.com/2010/05/food1.jpg)
+[![](/assets/spacetimewave/2010/05/food1.jpg "food1")](/assets/spacetimewave/2010/05/food1.jpg)
 

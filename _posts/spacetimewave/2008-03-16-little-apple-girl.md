@@ -9,5 +9,5 @@ tags:
 - 丰富多彩
 title: Little Apple Girl
 ---
-[![2441178990011778759S600x600Q85](http://boke9cheng.files.wordpress.com/2014/01/h5ml2cob6g.jpg)](http://boke9cheng.files.wordpress.com/2014/01/h5ml2cob6g.jpg)
+[![2441178990011778759S600x600Q85](/assets/spacetimewave/2014/01/h5ml2cob6g.jpg)](/assets/spacetimewave/2014/01/h5ml2cob6g.jpg)
 

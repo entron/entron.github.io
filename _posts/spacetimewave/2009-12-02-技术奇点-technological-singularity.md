@@ -17,6 +17,6 @@ http://en.wikipedia.org/wiki/Technological\_singularity
   
 http://www.nytimes.com/2009/05/24/weekinreview/24markoff.html  
   
-[![](http://boke9cheng.files.wordpress.com/2009/12/pptmooreslawai.jpg)](http://boke9cheng.files.wordpress.com/2009/12/pptmooreslawai.jpg)  
+[![](/assets/spacetimewave/2009/12/pptmooreslawai.jpg)](/assets/spacetimewave/2009/12/pptmooreslawai.jpg)  
 
 

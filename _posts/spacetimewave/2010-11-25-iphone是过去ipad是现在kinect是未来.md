@@ -15,7 +15,7 @@ title: iphone是过去，ipad是现在，Kinect是未来
 
 
 
-Kinect在开发阶段的名字是[Natal](http://spacetimewave.net/2010/03/google-summer-of-code-2010-%E4%B8%AD%E7%9A%84%E6%9C%89%E8%B6%A3%E9%A1%B9%E7%9B%AE/)项目，微软向这个项目的研发注入了巨资。对机器人很感兴趣的比尔盖茨肯定老早就看清了(他曾为“科学美国人”杂志撰文描绘未来机器人在家庭中的应用)，Kinect首先改变会游戏，然后会像鼠标的发明一样改变人们操纵电脑的方式，最终这些技术成果会应用到未来的智能机器人上面。[![](http://boke9cheng.files.wordpress.com/2010/11/robots1.jpg?w=223&h=300 "环球科学")](http://boke9cheng.files.wordpress.com/2010/11/robots1.jpg)
+Kinect在开发阶段的名字是[Natal](http://spacetimewave.net/2010/03/google-summer-of-code-2010-%E4%B8%AD%E7%9A%84%E6%9C%89%E8%B6%A3%E9%A1%B9%E7%9B%AE/)项目，微软向这个项目的研发注入了巨资。对机器人很感兴趣的比尔盖茨肯定老早就看清了(他曾为“科学美国人”杂志撰文描绘未来机器人在家庭中的应用)，Kinect首先改变会游戏，然后会像鼠标的发明一样改变人们操纵电脑的方式，最终这些技术成果会应用到未来的智能机器人上面。[![](/assets/spacetimewave/2010/11/robots1.jpg "环球科学")](/assets/spacetimewave/2010/11/robots1.jpg)
 
 
 

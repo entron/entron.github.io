@@ -25,7 +25,7 @@ A female leopard enjoying her flower in Stellenbosch:
 
 
 
-[![P1010720](http://boke9cheng.files.wordpress.com/2009/09/p1010720_thumb23.jpg "P1010720")](https://rjvapw.bay.livefilestore.com/y1mwmvHzgZYJSPoS8uila8uw8tUMYv39L3BOTOKDWRVy4cKcSJ1EKctVtoP05Qt_mBiJKRWr37k-GX5vuxBe8-pdNHGXvY_zG1O1DiJIcDBKj9t6cnlEhUoeQETVy92MGHOGdT19GkNliTOc7F8IoVQnQ/P1010720%5B25%5D.jpg)
+[![P1010720](/assets/spacetimewave/2009/09/p1010720_thumb23.jpg "P1010720")](https://rjvapw.bay.livefilestore.com/y1mwmvHzgZYJSPoS8uila8uw8tUMYv39L3BOTOKDWRVy4cKcSJ1EKctVtoP05Qt_mBiJKRWr37k-GX5vuxBe8-pdNHGXvY_zG1O1DiJIcDBKj9t6cnlEhUoeQETVy92MGHOGdT19GkNliTOc7F8IoVQnQ/P1010720%5B25%5D.jpg)
 
 
 
@@ -37,7 +37,7 @@ The weather forecast station in the hotel we lived in Addo:
 
 
 
-[![P1010912](http://boke9cheng.files.wordpress.com/2014/01/1j692f35sc.jpg "P1010912")](https://rjvapw.bay.livefilestore.com/y1mX8P6cwZaLYCUMS1ay5NgJlTfBJx5G1i9rLXvTRDUBiYaYvJCrKr_1ekrKjG19bMqVje6OVNm7ePwVOARUYpgDaZbp2kGBLR5UQ4OEVI-PBD5YnALiYVR2sHX-Ee61OFn0xfgWAbPrnQKlkOEGWWUbA/P1010912%5B10%5D.jpg)
+[![P1010912](/assets/spacetimewave/2014/01/1j692f35sc.jpg "P1010912")](https://rjvapw.bay.livefilestore.com/y1mX8P6cwZaLYCUMS1ay5NgJlTfBJx5G1i9rLXvTRDUBiYaYvJCrKr_1ekrKjG19bMqVje6OVNm7ePwVOARUYpgDaZbp2kGBLR5UQ4OEVI-PBD5YnALiYVR2sHX-Ee61OFn0xfgWAbPrnQKlkOEGWWUbA/P1010912%5B10%5D.jpg)
 
 
 
@@ -61,7 +61,7 @@ A finger\-post on the way to Cape Point:
 
 
 
-[![P1010994](http://boke9cheng.files.wordpress.com/2009/09/p1010994_thumb9.jpg "P1010994")](https://rjvapw.bay.livefilestore.com/y1mAWc35fQgGelhcipScZDmLOxTTNx_AlI5mpr00okpHy-crdzn3b54VByUDM7M6itTAnjbTLO6J53_6OdwomO1VWJyquZopx3pqWk8zRiwAT9XZXA7N3OS39Hv5VwCWzyVFEa24ZAq9LAnDKHhof2Yww/P1010994%5B11%5D.jpg)
+[![P1010994](/assets/spacetimewave/2009/09/p1010994_thumb9.jpg "P1010994")](https://rjvapw.bay.livefilestore.com/y1mAWc35fQgGelhcipScZDmLOxTTNx_AlI5mpr00okpHy-crdzn3b54VByUDM7M6itTAnjbTLO6J53_6OdwomO1VWJyquZopx3pqWk8zRiwAT9XZXA7N3OS39Hv5VwCWzyVFEa24ZAq9LAnDKHhof2Yww/P1010994%5B11%5D.jpg)
 
 
 
@@ -83,7 +83,7 @@ The evolution of human. Taken by my colleague somewhere near Cape Point.
 
 
 
-[![P1010604](http://boke9cheng.files.wordpress.com/2009/09/p1010604_thumb7.jpg "P1010604")](https://rjvapw.bay.livefilestore.com/y1mLhHoOMYpS45g8oYK4tHxouvyJ2VHOUUx5LCnFnsrc0k7BF-pE9IMkD6pvzDVkZJos-MIP-WBFIMU33cFPefF51mvBScLW5VqNKrpI13d7hCRpSI-s0AN8dHhBXibFH557DeJu62g1mhJuSohyMVUGg/P1010604%5B9%5D.jpg)
+[![P1010604](/assets/spacetimewave/2009/09/p1010604_thumb7.jpg "P1010604")](https://rjvapw.bay.livefilestore.com/y1mLhHoOMYpS45g8oYK4tHxouvyJ2VHOUUx5LCnFnsrc0k7BF-pE9IMkD6pvzDVkZJos-MIP-WBFIMU33cFPefF51mvBScLW5VqNKrpI13d7hCRpSI-s0AN8dHhBXibFH557DeJu62g1mhJuSohyMVUGg/P1010604%5B9%5D.jpg)
 
 
 

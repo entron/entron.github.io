@@ -13,7 +13,7 @@ title: Snow leopard 特别加入汉字手写输入了
 正如名字一样, Snow Leopard不是在Leopard上的革命性创新(reinvent), 而是进一步精雕细琢(refine). 除了汉字输入外, 我很向往的一个改进是, Snow Leopard去掉了系统中支持power处理器的代码,只保留了针对intel处理器的, 瘦身了一半. 对我们这些一向认为简洁是美的理论物理学专业的人来说, 这就如同有洁癖的人痛痛快快的洗一次手一样说不出的浑身满足.  
   
 在她的[新技术介绍页面里](http://www.apple.com.cn/macosx/technology/), 我发现了一个很赞的图标.  
-[![](http://boke9cheng.files.wordpress.com/2014/01/i8ra42cs99.jpg)](http://boke9cheng.files.wordpress.com/2014/01/i8ra42cs99.jpg)  
+[![](/assets/spacetimewave/2014/01/i8ra42cs99.jpg)](/assets/spacetimewave/2014/01/i8ra42cs99.jpg)  
   
 Grand Central Dispatch, 别想歪了:)  
   
