@@ -49,10 +49,6 @@ The receipt of a pizza I ordered in Port Elisabeth. I am the "stripe top guy":)
 
 
 
-[![06092009237](/assets/spacetimewave/2009/09/06092009237_thumb5.jpg "06092009237")](https://rjvapw.bay.livefilestore.com/y1mfDXxuwEY7iY5olp7gZsgMNfOog1OxwpnW0-QW1aYTtBpB6q3022RKOerUAFmGQYI-w2jAeYcoGgDfuRl5xKhfQ5IBRtCgSNmB9iJGA_wwlRxb0DgD6W797wAjcJfXuNmF_mNDb3GF7LuRCO6235dig/06092009237%5B7%5D.jpg)
-
-
-
 去Cape Point(附近的好望角似乎在南非之外更有名一些)的路上的路标：
 
 
@@ -70,8 +66,6 @@ A finger\-post on the way to Cape Point:
 
 
 The Olympia Bar by the side of M4 road. Note that "Staff dressed by lost property.":
-
-[![](/assets/spacetimewave/2009/09/P1020081.jpg)](/assets/spacetimewave/2009/09/P1020081.jpg)
 
 
 
@@ -92,8 +86,3 @@ Stellenbosch的一个山上拍的。Tree in Trees. 这个是上帝的幽默。
 
 
 Tree in Trees. On one hill of Stellenbosch. God's humor.
-
-
-
-[![P1010970](/assets/spacetimewave/2009/09/P1010970_thumb6.jpg "P1010970")](https://rjvapw.bay.livefilestore.com/y1mtwECJ6rIRlzR6mmdB4qS7FeTv2H5AJWAnv7FI-BWovBaZDcAC6JS4JZoDM_OK78qe5Zyd6NjQN_9ERWVXfUNQgwdFedd7bMcyw1lrcgACb9hYlPk98oixypt9GB0AkNjFYvznXJFqwWuBYXLkIjKLQ/P1010970%5B8%5D.jpg)
-

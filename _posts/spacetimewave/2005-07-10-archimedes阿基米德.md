@@ -8,11 +8,11 @@ tags:
 title: Archimedes(阿基米德)
 ---
  "给我一个支点，我可以撬动地球。"  
-  
+
   "Eureka!"  
-  
+
   "不要碰我的圆！"  
-  
+
                                        By   Archimedes
 
 
@@ -23,5 +23,5 @@ Archimedes最牛的工作是数学.早年在亚历山大学习时曾向欧几里
 
      Archimedes最有资格说"高处不胜寒","独孤求败".但他似乎并没有功夫体味孤独.思考的乐趣超越了尘世的苦恼这就是神与人的区别.当敌军冲破家门来到他面前时,Archimedes却怕自己正在演算的图形被打乱,对士兵说"不要碰我的圆".他被士兵杀害了,他的思想却没有.
 
-[![Archimedes](/assets/spacetimewave/2005/07/archimedes.jpeg)](/assets/spacetimewave/2005/07/archimedes.jpeg) [![Archimedes2](/assets/spacetimewave/2005/07/archimedes2.jpeg)](/assets/spacetimewave/2005/07/archimedes2.jpeg)
-![]()
+[![Archimedes](/assets/spacetimewave/2005/07/archimedes.jpeg)](/assets/spacetimewave/2005/07/archimedes.jpeg)
+[![Archimedes2](/assets/spacetimewave/2005/07/archimedes2.jpeg)](/assets/spacetimewave/2005/07/archimedes2.jpeg)
