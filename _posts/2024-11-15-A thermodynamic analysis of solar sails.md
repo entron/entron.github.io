@@ -1,7 +1,7 @@
 ---
 title: A thermodynamic analysis of solar sails
 date: 2024-11-15 21:25:00 +0100
-categories: [research]
+categories: [physics]
 tags: [paper]     # TAG names should always be lowercase
 math: true
 ---
