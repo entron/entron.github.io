@@ -47,7 +47,7 @@ I feel there are quite a few steps skipped between here and standard QM textbook
 
  - Secondly, I want to know how to go from the first line to the second line of equation $(1)$. However, I couldn't find the explicit form of $P_2$ either in the paper or by googling. Could somebody give me a hint?
 
-Edit: I found [a chapter](http://galileo.phys.virginia.edu/~pf7a/msm3.pdf) of the unfinished book "Modern Statistical Mechanics" by Paul Fendley almost directly answers all my questions.
+Edit: I found a chapter of the unfinished book "Modern Statistical Mechanics" by Paul Fendley almost directly answers all my questions.
 
 ----------------
 
