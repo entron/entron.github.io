@@ -108,8 +108,4 @@ then we get
 $$
 P_2 = \frac{1}{6} (\mathbf{S_i} \cdot\mathbf{S_{i+1}})^2 + \frac{1}{2} \mathbf{S_i} \cdot\mathbf{S_{i+1}} + \frac{1}{3}
 $$
-
-
-While reading works related to the Nobel Prize in Physics 2016 I start reading the original AKLT paper.
-I should have read it long before while I am still study physics as it is very important. 
   
