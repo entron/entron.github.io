@@ -6,38 +6,24 @@ math: false
 mermaid: true
 ---
 
-I have attempted to learn transfomer multiple times. 
-When the now classical paper [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) just came out in 2017 I have attracted by the title. That's about 5 years after the classical work [AlexNet](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html), followed by rapid development of deeper and more safisticated models such as VGG, ResNet, Inception and Faster R-CNN in the field of computer vision. 
-Around 2016-17 were seeing the performance increasing speed of vision models reaching a plateu.
-Many people including myself think attention if one of the most promissing direction to go forward.
-No one knows exactly how to make it work though until *Attention Is All You Need* made the  first major success.
+I have attempted to learn the Transformer multiple times.
 
-However, after reading the paper for one hour, I give up with the conclusion that it is a paper written by genius, but also for genius. 
-I didn't like the use of the terms "key", "value" and "query" either. 
-They feel too computer sciency for me. (I still think those are bad naming and framing. They obscured the genius architecture, at least to me).
-I was hopping someone propose a better and more intuitive archteture to replace transfomer in a few years, so I don't have to have to learn it.
+When the now-classical paper [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762) first came out in 2017, I was attracted by its title. That was about 5 years after the classic work [AlexNet](https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html), followed by rapid developments of deeper and more sophisticated models such as VGG, ResNet, Inception, and Faster R-CNN in the field of computer vision.
 
-This never happend. What did happen is one model after another which based on transfomer made big success.
-I did invested a bit more time and had another two small tries when BERT and ViT came out. 
-Wih the help of more intuitive material 
-such as the fatastic guide [*The Illustrated Transformer*](https://jalammar.github.io/illustrated-transformer/)
-I was able to have a better picture of the model though not every detail. 
-I still have many qestions unanswered.
+Around 2016–17, we were seeing a plateau in the performance improvement of vision models. Many people, including myself, thought attention might be one of the most promising directions forward. However, no one knew exactly how to make it work until *Attention Is All You Need* achieved the first major success.
 
-By the end of 2022, ChatGPT relieased and everyone is shocked.
-I told myself that's it, no more waiting, understand everything about transformer now!
-Luckily Andrej Karpathy created the [nanoGPT](https://github.com/karpathy/nanoGPT) together with a very detailed [two hour video](https://www.youtube.com/watch?v=kCc8FmEb1nY) to explain it.
-I followed the video, read the code, run some experiments, and even created [a pull request](https://github.com/karpathy/nanoGPT/pull/254).
+However, after reading the paper for one hour, I gave up, concluding that it was a paper written by geniuses, but also for geniuses. I didn't like the use of the terms "key," "value," and "query" either. They felt too "computer sciency" to me. (I still think those are poor naming choices and framing. They obscured the genius architecture, at least for me.) I was hoping someone would propose a better and more intuitive architecture to replace the Transformer in a few years, so I wouldn't have to learn it.
 
-The problem is I am a visual thinker, without a diagram I don't feel I have learned it even though I understand the code line by line. Beside after two years not working directly on the architeture level I feel I quickly forgot lots of things about the model. I need a diagram, a map of the code to help me to easily recall and navigate different parts of the LLM.
+This never happened. Instead, one model after another based on the Transformer achieved significant success. I did invest a bit more time and made two other small attempts when BERT and ViT came out. With the help of more intuitive materials such as the fantastic guide [*The Illustrated Transformer*](https://jalammar.github.io/illustrated-transformer/), I was able to develop a clearer understanding of the model, although not in every detail. I still had many unanswered questions.
 
-Therefore, I asked LLM to create some [mermaid diagrams](https://mermaid.js.org/) for me based on the `model.py` file in nanoGPT repo.
-It is actually a good way to test the LLM's coding ability by the way.
-I have tried Gemini Pro 2.5, ChatGPT 4o, 4.5, o1, Gemma 27b, Claudia 3.7 (in copilot), Claudia 3.7 thinking (in copilot). The best result is from Claudia 3.7. Interestingly, Gemma 3 forget my question after reading the code.  In the end I used the diagram from claudia 3.7 and edited with chatgpt 4.5 and manually.
+By the end of 2022, ChatGPT was released, and everyone was shocked. I told myself, that's it—no more waiting—I need to understand everything about the Transformer now! Luckily, Andrej Karpathy created [nanoGPT](https://github.com/karpathy/nanoGPT) along with a very detailed [two-hour video](https://www.youtube.com/watch?v=kCc8FmEb1nY) explaining it. I followed the video, read the code, ran some experiments, and even created [a pull request](https://github.com/karpathy/nanoGPT/pull/254).
 
-There are 5 diagrams from high level to lower levels. 
-I used top to down information flow direction, which is the opposite of the diagram in the original  transformer paper, because I somehow like it better and it aligns with "deep" as in deep learning.
-I also add tensor dimensions in the blocks with the following meaning:
+The problem is, I am a visual thinker. Without a diagram, I don't feel like I've learned something thoroughly, even if I understand the code line by line. Additionally, after two years of not working directly at the architecture level, I felt I quickly forgot many details about the model. I needed a diagram—a map of the code—to help me easily recall and navigate different parts of the LLM.
+
+Therefore, I asked an LLM to create some [Mermaid diagrams](https://mermaid.js.org/) for me based on the `model.py` file in the nanoGPT repo. By the way, this is actually a good method to test an LLM's coding ability. I tried Gemini Pro 2.5, ChatGPT 4o, 4.5, o1, Gemma 3 27b, Claude 3.7 (in Copilot), and Claude 3.7 Thinking (in Copilot). The best result came from Claude 3.7. Interestingly, Gemma 3 forgot my question after reading the code. In the end, I used the diagram from Claude 3.7, edited it with ChatGPT 4.5, and did some manual adjustments.
+
+There are 5 diagrams ranging from high-level to lower-level views. I used a top-to-bottom information flow direction, which is opposite to the original Transformer paper's diagrams, because I somehow prefer this direction, and it aligns with the "deep" concept in deep learning. I also added tensor dimensions in the blocks, with the following meanings:
+
 
 - **B**: Batch size
 - **T**: Sequence length (Block size, e.g., 1024)
