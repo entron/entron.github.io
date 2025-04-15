@@ -6,20 +6,21 @@ math: false
 mermaid: false
 ---
 
-In the last post of this series we have tried the instruction-tuned IT model.
-In this post we focus on the raw PT model. 
-The following is Table 15 from Gemma 3 technical report.
-It compares the performance of PT and IT models on long context
+In the last post of this series, we tried the instruction-tuned IT model.
+In this post, we focus on the raw PT model. 
+The following is Table 15 from the Gemma 3 technical report.
+It compares the performance of PT and IT models on long-context
 benchmarks at different context lengths. 
 
 ![In the beginning was the Word](/assets/2025/Gemma3_table15.png)
 
-As you can see even though IT model is more popular,
-in a controlled setting for speciallized task PT model performs generally better.
-If you only need to build a chatbot you probably should stick with the IT model,
-but if you want make a special agent you may find PT model better.
+As you can see, even though the IT model is more popular,
+in a controlled setting for specialized tasks, the PT model generally performs better.
+If you only need to build a chatbot, you probably should stick with the IT model,
+but if you want to make a special agent, you may find the PT model better.
 
-Let's run the PT model with a simple example with [batched input]({% post_url 2025-04-12-Try Gemma3 using Hugging Face Part 2 %}#batched-input)
+## Simple prompt
+Let's first run the PT model with a simple example using [batched input]({% post_url 2025-04-12-Try Gemma3 using Hugging Face Part 2 %}#batched-input).
 
 ```python
 model_id = "google/gemma-3-4b-pt"
@@ -33,12 +34,12 @@ prompt = ["I still remember the birthday present I got at 19."]*3
 model_inputs = processor(text=prompt, return_tensors="pt").to(device)
 ```
 
-If we print the decoded model_inputs with
+If we print the decoded `model_inputs` with:
 ```python
 decoded_inputs = processor.decode(model_inputs["input_ids"][0], skip_special_tokens=False)
 print(decoded_inputs)
 ```
-we can see it is just adding `<bos>` token in the beginning:
+we can see it is just adding the `<bos>` token at the beginning:
 
 ```
 <bos>I still remember the birthday present I got at 19.
@@ -69,23 +70,23 @@ My girlfriend (later, wife) gave me a book I later bought for myself and gave as
 <em>A Short History of Nearly Everything</em> by Bill Bryson was one of the most eye-opening and inspiring books I have ever read, about how science works and how science has worked for the 200,000 years since humanity started having an impact on this planet, and the 2.5 million years or so since we figured
 ```
 
-The pretrained model is just sampling internet text, and it does not know you are asking a question even you use a question as prompt. It will simply think this is the start of an piece of text on internet and then it will try to complete it. For example I have tried the prompt "Where is the capital of France?" and I got
+The pre-trained model is just sampling internet text, and it does not know you are asking a question even if you use a question as a prompt. It will simply think this is the start of a piece of text on the internet and then try to complete it. For example, I tried the prompt "Where is the capital of France?" and I got:
 
 > Is that London or Paris? Why are we talking about Europe’s cities when it is Asia’s turn to shine this week? We’ll discuss that today, as well as a few Asia-related items in the news.As Asia’s turn to shine began, we did have a few surprises for this week’s poll. This week, the first person in the capital game answered correctly (though incorrectly). Also, despite several comments calling for the UK capital London to be excluded
 
-The pre-trained model could sounds either like crazy or genius, dpending on your question and perspective, but for sure it feels detached. 
-That is why we use instruct tunning to it more the model sane and communicatable. 
+The pre-trained model could sound either crazy or genius, depending on your question and perspective, but for sure it feels detached. 
+That is why we use instruction tuning to make the model more sane and communicative. 
 
-We can also use "prompt engeering" to prepare the PT model in certain mental state to make it be able to answer user questions. For example, I tried the following prompt
+## Prompt engineering
+We can also use "prompt engineering" to prepare the PT model in a certain mental state to make it able to answer user questions. For example, I tried the following prompt:
 
 > Here is a detailed record of the conversation between a tester and the first AGI made by humans.
-> It demonstrated that AGI can be extremely helpful and reliable assistant in answering human queries.
+> It demonstrated that AGI can be an extremely helpful and reliable assistant in answering human queries.
 > 
 > Tester: What is the capital of Spain?  
 > AGI:
 
-
-Here are results of two tries:
+Here are the results of two tries:
 
 ```
 Version 1: -The capital of France is Paris.
@@ -121,9 +122,10 @@ AGI:
 The longest river in the
 ```
 
-It kind worked but does not match the answer quality of the IT model of course.
+It kind of worked but does not match the answer quality of the IT model, of course.
 
-We can also run the PT model with image as input. For example following [the official example](https://huggingface.co/google/gemma-3-4b-pt) we try
+## Image with prompt
+We can also run the PT model with an image as input. For example, following [the official example](https://huggingface.co/google/gemma-3-4b-pt), we try:
 
 ```python
 from transformers import AutoProcessor, Gemma3ForConditionalGeneration
@@ -162,4 +164,5 @@ I was happy to see the bumble bee.
 I was happy to see the bumble
 ```
 
-That's all about PT model. It is quite straight forward. Testing it with various prompt and images can be fun!
+That's all about the PT model. It is simple. 
+Testing it with various prompts and images and see how the model hallucinate can be fun!
