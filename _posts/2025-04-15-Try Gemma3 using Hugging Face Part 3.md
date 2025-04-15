@@ -20,7 +20,7 @@ If you only need to build a chatbot, you probably should stick with the IT model
 but if you want to make a special agent, you may find the PT model better.
 
 ## Simple prompt
-Let's first run the PT model with a simple example using [batched input]({% post_url 2025-04-12-Try Gemma3 using Hugging Face Part 2 %}#batched-input).
+Let's first run the PT model with a simple example using [batched input]({% post_url 2025-04-14-Try Gemma3 using Hugging Face Part 2 %}#batched-input).
 
 ```python
 model_id = "google/gemma-3-4b-pt"
