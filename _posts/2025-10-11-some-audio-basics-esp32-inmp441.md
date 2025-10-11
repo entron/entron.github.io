@@ -51,14 +51,51 @@ $$ \text{dB} = 10 \log_{10}\left(\frac{A^2}{A_{ref}^2}\right) = 20 \log_{10}\lef
 That’s why the formula for amplitude uses **20 × log₁₀**, while for power it’s **10 × log₁₀**.
 
 
+### Two kinds of “dB”
 
-In digital systems, the reference is the **maximum possible value** (full scale). This unit is called **dBFS (decibels relative to full scale)**:
+There are two related but distinct uses of "dB" you will commonly see:
 
-* 0 dBFS → the loudest value a digital system can represent (clipping point)
-* –6 dBFS → half the amplitude of full scale
-* –20 dBFS → one-tenth the amplitude
+| Domain               | Unit name                     | Reference point                                            | What it measures                         |
+| -------------------- | ----------------------------- | ---------------------------------------------------------- | ---------------------------------------- |
+| Acoustic (air)       | dB SPL (Sound Pressure Level) | 20 µPa (threshold of human hearing)                        | The actual loudness of sound in the air  |
+| Electrical / Digital | dBFS, dBV, dBu, etc.          | System-specific reference (e.g., full scale, 1 V, 0.775 V) | The signal level inside a device or file |
 
-Thus, **0 dBFS is the ceiling**; all valid audio samples are below it.
+So when someone says "70 dB sound" they mean 70 dB above 20 µPa in the air. When we say "–6 dBFS" we mean the digital sample amplitude is half of the maximum value the system can represent. They both use decibels to express a ratio, but the reference point differs.
+
+
+#### Acoustic dB SPL — sound in the air
+
+Sound Pressure Level (SPL) is defined as:
+
+$$\text{dB SPL} = 20 \log_{10}\left(\frac{p}{p_{ref}}\right)$$
+
+where p is the actual sound pressure (in Pascals) and
+
+$$p_{ref} = 20\ \mu\text{Pa}$$
+
+Example approximate dB SPL levels:
+
+* Breathing — ~10 dB SPL (barely audible)
+* Quiet room — ~40 dB SPL
+* Normal conversation (1 m away) — ~60 dB SPL
+* Traffic / vacuum cleaner — ~80 dB SPL
+* Rock concert — ~110 dB SPL
+* Jet engine (close) — ~130 dB SPL (painful)
+
+
+#### Digital / electrical dB — inside a system
+
+In contrast, units like dBFS measure a digital value's amplitude relative to the system's maximum possible digital value (full scale):
+
+* 0 dBFS → the largest possible sample value (clipping point)
+* –6 dBFS → half amplitude
+* –20 dBFS → one-tenth amplitude
+
+The microphone links these two domains. For example, the INMP441 sensitivity spec "–26 dBFS @ 94 dB SPL" means:
+
+94 dB SPL in the air → digital output peaks at about –26 dBFS.
+
+This shows how many digital "steps" correspond to a given real-world loudness.
 
 
 
@@ -114,7 +151,7 @@ Let's take a real example of the popular **INMP441** mic module. It has the foll
 
 **SNR — 61 dBA:**  The Signal-to-Noise Ratio measures the difference between the microphone’s maximum signal level and its self-noise floor. 61 dBA corresponds to about 10 effective bits (ENOB) of usable precision.
 
-**Sensitivity — –26 dBFS @ 94 dB SPL:**  Here, *SPL* stands for **Sound Pressure Level**, a measure of acoustic pressure relative to 20 µPa (the quietest sound humans can hear). The “@” symbol means “at.” This spec says that when the microphone is exposed to a 94 dB SPL sound (about 1 Pascal of acoustic pressure, roughly the loudness of normal speech at close distance), its digital output peaks around –26 dBFS. In other words, its signal level sits 26 dB below full-scale digital clipping, giving healthy headroom for louder sounds such as shouting or music.
+**Sensitivity — –26 dBFS @ 94 dB SPL:**  This spec says that when the microphone is exposed to a 94 dB SPL sound (about 1 Pascal of acoustic pressure, roughly the loudness of normal speech at close distance), its digital output peaks around –26 dBFS. In other words, its signal level sits 26 dB below full-scale digital clipping, giving healthy headroom for louder sounds such as shouting or music.
 
 **Frequency Response — 60 Hz to 15 kHz:**  The microphone’s sensitivity is nearly flat across this range, covering all important speech frequencies.
 
