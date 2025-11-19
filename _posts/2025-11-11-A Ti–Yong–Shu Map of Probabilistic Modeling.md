@@ -3,7 +3,7 @@ layout: post
 title: "A Ti–Yong–Shu Map of Probabilistic Modeling"
 date: 2025-10-11 21:30:00 +0000
 categories: [AI]
-tags: [Probabilistic Modeling, ChatGPT]
+tags: [Probabilistic Modeling]
 math: true
 
 ---
