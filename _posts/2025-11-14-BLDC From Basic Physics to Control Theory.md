@@ -59,6 +59,9 @@ Therefore we’ll use that as our mental model. An outrunner contains:
 
 Despite looking simple from the outside, the magnetic and mechanical optimization inside an outrunner is highly sophisticated.
 
+![BLCD construction](/assets/2025/construction_bldc.avif)
+_BLCD construction_
+
 
 ### 1.2. Poles, Slots, and Coils
 
