@@ -123,8 +123,6 @@ For distribution models, how do we sample from the learned distribution?
 
 ## 5. A unified table of probabilistic models
 
-Here’s the updated table using your preferences:
-
 * Axis 1: **Target** (Distribution vs. Conditional)
 * Axis 2: **Latent?** (Yes / No)
 * Axis 3: **Density type**
