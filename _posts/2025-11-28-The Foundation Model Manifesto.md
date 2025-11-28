@@ -6,8 +6,21 @@ math: false
 mermaid: false
 ---
 
+This is based on my discussion with ChatGPT.
+I’ve been thinking about this topic for a while, and what motivates me is the following observation:
 
-**Building a Knowledge Power Structure That Is Longer-Sighted Than Capital, More Stable Than Politics, and Freer Than Markets**
+People with knowledge—such as technical professionals—often play a surprisingly small role in important decisions compared to capital (e.g., the stock market) and political power. This causes a vast amount of human effort and resources to be wasted or directed toward superficial goals. As a result, the world is becoming increasingly short-sighted and shallow.
+
+As an individual technical person, you can try to found a startup. If you are exceptionally lucky, you might eventually become “capital” yourself and gain influence. This is the best way to operate within the current system.
+
+However, I want to change the system more fundamentally. I want to create a structure in which people with knowledge hold more power.
+
+More specifically, I want to design a new way to organize certain kinds of collective human activity—such as scientific research and innovative companies—so that it empowers the people who contribute, rather than those who merely own. Ideally, this system would also be more efficient through meritocracy and would outperform the traditional model.
+
+How to enable a large group of people to work together while achieving the goals above is a fascinating topic. I have considered many possibilities and want to borrow ideas from blockchain (DAOs) and bio-inspired systems. However, this is not an easy task, and there are many pitfalls that could easily turn it into a utopian idea.
+
+This article is therefore a work in progress, and I welcome any form of feedback or input.
+
 
 ---
 
