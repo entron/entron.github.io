@@ -191,7 +191,7 @@ No wonder an enormous amount of modern generative modeling work builds on the VA
 
 ### 3.2. The Loss Function
 
-Initially I thought the loss function, that is the minus of ELBO, is this relation from the above:
+Initially, I thought we directly maximize ELBO on these two fundamental goals:
 
 $$
 \text{ELBO}(x)
@@ -201,7 +201,7 @@ $$
 D_{\mathrm{KL}}(q(z|x) \| p_\theta(z|x))
 $$
 
-Quickly I realized both terms are not calculatable. Actually, in VAE we use the relation the other way around:
+Quickly I realized both terms are not calculatable. Actually, in VAE we use the terms on the other side of the equation:
 
 $$
 \begin{aligned}
@@ -300,11 +300,13 @@ The first goal — modeling $p(x)$ — is shared with VAEs.
 
 The second goal of my model is the maximization of mutual information between input and output.
 In a VAE, the reconstruction term is related to this idea, but only as a proxy: it encourages z to carry information about x, without directly maximizing mutual information.
-
 The KL term in a VAE, however, actually pushes in the opposite direction. When averaged over the data, it includes a mutual information term and penalizes it, effectively acting as an information bottleneck that tends to *reduce* the information z carries about x.
 
 So while VAEs feel conceptually related to my bio-inspired, ab initio IPU model, their optimization objective is fundamentally different: VAEs trade off likelihood and compression, whereas the IPU model explicitly maximizes mutual information between input and output. 
-The IPU model also compresses data, often quite drastically in practice. However, there is a subtle but important difference: in the IPU model, compression is not an explicit optimization goal but rather a model/hardware constraint, which more closely resembles the situation in biology. In that sense, VAEs seem to be aiming for something similar to what the IPU model achieves, but they get there via a very different—and in some ways less direct—objective.
+
+The IPU model also compresses data, often quite drastically in practice. 
+However, there is a subtle but important difference: in the IPU model, compression is not an explicit optimization goal but rather a model/hardware constraint, which more closely resembles the situation in biology. 
+In that sense, VAEs seem to be aiming for something similar to what the IPU model achieves, but they get there via a very different—and in some ways less direct—objective.
 
 
 

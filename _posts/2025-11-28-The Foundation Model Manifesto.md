@@ -554,12 +554,12 @@ If we do not learn to organize ourselves with the adaptive, self-correcting, res
 
 This manifesto calls for:
 
-* **Knowledge to regain its governing authority**
-* **Freedom to be protected as a systemic necessity**
-* **Organizations to develop immune systems, rhythms, and homeostasis**
-* **Long-term horizons to replace short-term churn**
+* Knowledge to regain its governing authority
+* Freedom to be protected as a systemic necessity
+* Organizations to develop immune systems, rhythms, and homeostasis
+* Long-term horizons to replace short-term churn
 
-The future will not belong to power, markets, or bureaucracy—
+The future will not belong to power, capital, or bureaucracy—
 but to knowledge, creativity, and the living systems capable of sustaining them.
 
 The Foundation Model is a blueprint for such a system.
