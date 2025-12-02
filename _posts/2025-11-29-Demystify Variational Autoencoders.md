@@ -1,5 +1,5 @@
 ---
-title: "Learn Variational Autoencoders"
+title: "Demystify Variational Autoencoders"
 categories: [AI]
 tags: [Probabilistic Modeling]     # TAG names should always be lowercase
 math: true
@@ -34,12 +34,12 @@ They’re great for:
 
 But they have two big limitations:
 
-1. **Latent space is not continuous or structured**
+1. Latent space is not continuous or structured
 
    * Interpolating between two latent vectors often produces garbage.
    * There’s no guarantee that random points in latent space decode to *valid* samples.
 
-2. **Not true generative models**
+2. Not true generative models
 
    Sampling random points from the latent space does not reliably produce meaningful outputs because the model never learned the distribution of valid latent vectors.
 
@@ -63,28 +63,42 @@ Result: a model that can:
 
 VAE has two fundamental goals:
 
-1. A good generative model of data → large $p_\theta(x)$
-2. The posterior over latents → $p_\theta(z \mid x)$
+1. A good model of the data
+   → learn a good generative model of the data
+   → assign high probability to the data, i.e. large $p_\theta(x)$ (high $\log p_\theta(x)$)
 
-However, the real problem is that the posterior is intractable.
-The true posterior is:
+2. A good representation of the data  
+   → recover the posterior over latents for each datapoint  
+   → the Bayesian posterior $p_\theta(z \mid x)$
+
+The difficulty begins with the marginal likelihood:
 
 $$
-p_\theta(z \mid x) = \frac{p_\theta(x,z)}{p_\theta(x)} = \frac{p_\theta(x \mid z)p(z)}{\int p_\theta(x \mid z)p(z)dz}
+p_\theta(x) = \int p_\theta(x \mid z) p(z)\, dz
 $$
 
-The denominator $\int p_\theta(x \mid z)p(z) dz$ is hard (high-dimensional integral), so:
+This integral is high-dimensional and generally intractable.
+And because we cannot compute $p_\theta(x)$, the true posterior is also intractable:
 
-* We **can’t** compute $p_\theta(z \mid x)$
-* We **also can’t** compute $\log p_\theta(x)$ exactly
+$$
+p_\theta(z \mid x)
+= \frac{p_\theta(x,z)}{p_\theta(x)}
+= \frac{p_\theta(x \mid z)p(z)}{\int p_\theta(x \mid z)p(z)\, dz}
+$$
 
-Neither of the two goals are easily achievable. 
-This is the fundamental pain.
+So:
+
+* We can’t compute $p_\theta(x)$ exactly  
+* Therefore we can’t compute $p_\theta(z \mid x)$ either
+
+Thus, neither of the two goals can be directly achieved.
+This intractability is exactly the pain that VAEs are designed to address.
 
 
 ## 3. The V in VAE - Variational Inference
 
-Variational inference is a method used in Bayesian statistics to approximate a complex posterior distribution 
+Good news is that the pain is well-known and somehow treatable. 
+For example, variational inference (VI) is a method used in Bayesian statistics to approximate a complex posterior distribution 
 with a simpler, more tractable distribution. 
 It works by turning the problem of approximating a probability distribution into an optimization problem, 
 where the goal is to find the parameters of the simpler distribution that minimize the difference, 
@@ -97,16 +111,18 @@ That is, variational inference says:
 We want:
 
 $$
-q_\phi(z \mid x) \approx p_\theta(z \mid x)
+q_\phi(z \mid x) \approx p_\theta(z \mid x),
 $$
 
-So now we have **two sets of parameters**:
+and we have two sets of parameters:
 
 * $\theta$: generative model (decoder)
 * $\phi$: variational / inference model (encoder)
 
+Will VI save VAE? Let's explore.
 
-### 3.1. Some Math Tricks
+
+### 3.1. Some Math Exploration
 
 Start by writing the KL:
 
@@ -157,6 +173,8 @@ $$
 D_{\mathrm{KL}}(q(z|x) \| p_\theta(z|x)).
 $$
 
+Sooner than you might realise, we just got **the most imporant relation in VAE** with some simple math exploration.
+
 For convienice we give the first two iterms on the right side a nick name ELBO and we have
 
 $$
@@ -173,20 +191,40 @@ $$
 \text{ELBO}(x) \le \log p_\theta(x)
 $$
 
-Thus, the ELBO is a lower bound on the log evidence — hence the nick name Evidence Lower BOund (ELBO).
+Thus, the ELBO is a lower bound on the log evidence — hence the nickname Evidence Lower BOund (ELBO).
+Prior, posterior, evidence, and now ELBO… Bayesians really like fancy (and sometimes intimidating) names.
+We'd better focus on what these things are, rather than get distracted by the terminology.
+
+For this reason, unlike many tutorials on VAE/VI, I don’t think “ELBO” deserves a section title.
+Forget about the ‘lower bound’ — the name often feels like a label invented after the fact, more for convenience than for conveying real insight.
+You just need to remember:
+
+$$
+\boxed{
+\log p_\theta(x) - D_{\mathrm{KL}}(q(z|x) \| p_\theta(z|x))
+=
+\mathbb{E}_{q(z|x)}[\log p_\theta(x,z)]
+-
+\mathbb{E}_{q(z|x)}[\log q(z|x)]
+=
+\text{ELBO}(x).
+}
+$$
+
 
 **Training a VAE means maximizing ELBO**, which simultaneously optimize the two goals of VAE:
 
-  * maximizes a lower bound on log-likelihood
+  * maximizes the log-likelihood
   * minimizes KL between approximate posterior and true posterior
 
 This is variational inference, the heart of VAEs.
 Everything else — Gaussian encoder, KL term, reparameterization — exists only to make this variational inference workable inside deep learning.
 
 It may be more accurate to say the flow goes the other way:
-VAEs gave Bayesian inference a killer implementation toolkit — deep neural networks, backpropagation, and GPUs.
+VAEs gave Bayesian inference a killer implementation toolkit — **deep neural networks + backpropagation + GPUs**.
 With this combination, variational inference suddenly became scalable to millions of datapoints and high-dimensional continuous observations.
 No wonder an enormous amount of modern generative modeling work builds on the VAE framework.
+In another words, VAE made Bayesian methods great again.
 
 
 ### 3.2. The Loss Function
@@ -293,7 +331,7 @@ where $\mu_j$ and $\sigma_j$ are the components of $\mu_\phi(x)$ and $\sigma_\ph
 That’s it. No integrals, no sampling, no Monte Carlo.
 
 
-#### 3.3. Comparison to my IPU model
+#### 3.3. Comparison to my IPU model (Ad Alert!)
 
 In my [IPU model](https://arxiv.org/html/2210.13004v3/), there are also two goals.
 The first goal — modeling $p(x)$ — is shared with VAEs.
@@ -351,17 +389,21 @@ $$
 p_\theta(x \mid z)
 $$
 
+Similar to the encoder in a VAE—and unlike in a standard autoencoder—the decoder does not output x directly, 
+but instead outputs the parameters of a probability distribution over x.  
 In practice:
 
-* For continuous data: Gaussian likelihood (decoder outputs mean, maybe variance).
-* For binary data: Bernoulli likelihood (decoder outputs probabilities).
+* For continuous data: Gaussian likelihood (the decoder outputs a mean, and sometimes a variance).
+* For binary data: Bernoulli likelihood (the decoder outputs probabilities for each component of x).
 
-The decoder tries to reconstruct $x$ from sampled $z$.
+Once you have the distributuion you can insert the observed x to calculate the reconstruction term of the loss.
+Together with the KL term computed from the encoder, this gives us the complete loss, 
+and we can then use standard backpropagation to optimize the model parameters.
 
 
 ## 5. What Are the Assumptions of VAE?
 
-VAEs make quite a few assumptions (which make me suspicious about its usefulness when applying to practical problems). 
+As you may also noticed, VAEs make quite a few assumptions (which make me suspicious about its usefulness when applying to practical problems). 
 Roughly, they fall into a few categories.
 
 ### 5.1 Generative Model Assumptions
@@ -452,20 +494,42 @@ Roughly, they fall into a few categories.
 13. **Monte Carlo estimation**
     Expectations over $q(z \mid x)$ (e.g., the reconstruction term) are approximated using a small number of samples (often just 1 per datapoint per step).
 
+### 5.5. Relaxing These Assumptions
 
+In practice, almost every one of these assumptions has been relaxed after the original VAE, and doing so usually gives more expressive – and empirically better – VAEs:
+
+- **Richer priors over $z$**  
+  Instead of $p(z) = \mathcal{N}(0, I)$, use mixtures, learned priors (e.g. VampPrior), autoregressive priors, or flow-based priors to better match the aggregate posterior.
+
+- **More expressive decoders $p_\theta(x \mid z)$**  
+  Replace simple factorized Gaussians/Bernoullis with autoregressive decoders (e.g. PixelCNN-style), discretized logistic mixtures, or other likelihoods that capture complex dependencies in x.
+
+- **More flexible posteriors $q_\phi(z \mid x)$**  
+  Go beyond mean-field Gaussians by using normalizing flows, hierarchical latents, or other structured variational families that can better approximate the true posterior.
+
+- **Alternative objectives and inference schemes**  
+  Use tighter bounds or modified objectives (e.g. IWAE, $\beta$-VAE, KL annealing, semi-amortized inference) to trade off reconstruction, regularization, and latent structure in a more controlled way.
+
+So the lesson learned is that if you’re about to start a new research direction, start it with lots of assumptions.
+On one hand, it makes your life easier — on the other hand, others can later cite you when they relax them./s
 
 ## 6. Conclusion
 
-Variational Autoencoders really are a bit of a Frankenstein:
+A Variational Autoencoder really is a bit of a Frankenstein:
 
-* They combine autoencoders, Bayesian latent variable models, variational inference, information theory, and deep learning engineering tricks.
-* They rely on a stack of assumptions: i.i.d. data, simple prior, Gaussian posteriors, specific likelihoods, mean-field factorization, and ELBO optimization.
-* They introduce extra machinery like the KL divergence term and the reparameterization trick just to make the whole system trainable end-to-end.
+* It combines autoencoders, Bayesian latent variable models, variational inference, information theory, and a good amount of deep-learning engineering.
+* It relies on a stack of assumptions: i.i.d. data, a simple prior, Gaussian posteriors, specific likelihood families, mean-field factorization, and optimization via the ELBO.
+* It introduces extra machinery—like the KL divergence term and the reparameterization trick—just to make the whole system trainable end-to-end.
 
-But despite the scars and bolts, they were one of the first serious steps toward modern generative AI.
+But despite the scars and bolts, a VAE was one of the first serious steps toward modern generative AI.
 
-* VAEs were one of the first scalable deep generative models.
-* They made latent variable modeling practical for high-dimensional data (images, etc.).
-* They inspired a whole ecosystem: β-VAE, VQ-VAE, hierarchical VAEs, flow-based VAEs, diffusion models, and more.
+* It was one of the first scalable deep generative models.
+* It made latent-variable modeling practical for high-dimensional data such as images.
+* It inspired a whole ecosystem: β-VAE, VQ-VAE, hierarchical VAEs, flow-based VAEs, diffusion models, and more.
 
-Even though I think VAEs are not the final answer, they are nevertheless an important milestone, and I fully enjoyed learning about them.
+Even though VAE is probably not the final answer, it was an important milestone—and I enjoyed learning about it.
+Postwriting, I somehow also feel slightly more educated and more intellectual than I did prior to this update.
+Now, time to stretch my arms and give my posterior a break.
+
+
+{% include embed/youtube.html id='rhtadqkrWo0' %}
