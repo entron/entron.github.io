@@ -63,12 +63,12 @@ Result: a model that can:
 
 VAE has two fundamental goals:
 
-1. A good model of the data
-   → learn a good generative model of the data
+1. A good model of the data  
+   → learn a good generative model of the data  
    → assign high probability to the data, i.e. large $p_\theta(x)$ (high $\log p_\theta(x)$)
 
 2. A good representation of the data  
-   → recover the posterior over latents for each datapoint  
+   → recover the posterior over latents for each datapoint  S  
    → the Bayesian posterior $p_\theta(z \mid x)$
 
 The difficulty begins with the marginal likelihood:
@@ -191,12 +191,13 @@ $$
 \text{ELBO}(x) \le \log p_\theta(x)
 $$
 
-Thus, the ELBO is a lower bound on the log evidence — hence the nickname Evidence Lower BOund (ELBO).
+Thus, the ELBO is a lower bound on the log evidence — hence the name Evidence Lower BOund (ELBO).
 Prior, posterior, evidence, and now ELBO… Bayesians really like fancy (and sometimes intimidating) names.
 We'd better focus on what these things are, rather than get distracted by the terminology.
 
 For this reason, unlike many tutorials on VAE/VI, I don’t think “ELBO” deserves a section title.
-Forget about the ‘lower bound’ — the name often feels like a label invented after the fact, more for convenience than for conveying real insight.
+Forget about the “lower bound”—the name often feels like a label invented after the fact for convenience, 
+so stop pretending it represents the real insight behind VI optimization.
 You just need to remember:
 
 $$
@@ -224,7 +225,7 @@ It may be more accurate to say the flow goes the other way:
 VAEs gave Bayesian inference a killer implementation toolkit — **deep neural networks + backpropagation + GPUs**.
 With this combination, variational inference suddenly became scalable to millions of datapoints and high-dimensional continuous observations.
 No wonder an enormous amount of modern generative modeling work builds on the VAE framework.
-In another words, VAE made Bayesian methods great again.
+Some people would say, VAE made Bayesian methods great again.
 
 
 ### 3.2. The Loss Function
@@ -339,12 +340,11 @@ The first goal — modeling $p(x)$ — is shared with VAEs.
 The second goal of my model is the maximization of mutual information between input and output.
 In a VAE, the reconstruction term is related to this idea, but only as a proxy: it encourages z to carry information about x, without directly maximizing mutual information.
 The KL term in a VAE, however, actually pushes in the opposite direction. When averaged over the data, it includes a mutual information term and penalizes it, effectively acting as an information bottleneck that tends to *reduce* the information z carries about x.
-
-So while VAEs feel conceptually related to my bio-inspired, ab initio IPU model, their optimization objective is fundamentally different: VAEs trade off likelihood and compression, whereas the IPU model explicitly maximizes mutual information between input and output. 
-
 The IPU model also compresses data, often quite drastically in practice. 
 However, there is a subtle but important difference: in the IPU model, compression is not an explicit optimization goal but rather a model/hardware constraint, which more closely resembles the situation in biology. 
-In that sense, VAEs seem to be aiming for something similar to what the IPU model achieves, but they get there via a very different—and in some ways less direct—objective.
+
+So while VAEs feel conceptually related to my bio-inspired, ab initio IPU model, their optimization objective is actually quite different.
+VAEs seem to be aiming for something similar to what the IPU model achieves, but they get there via a very different—and in some ways less direct—objective.
 
 
 
@@ -510,26 +510,26 @@ In practice, almost every one of these assumptions has been relaxed after the or
 - **Alternative objectives and inference schemes**  
   Use tighter bounds or modified objectives (e.g. IWAE, $\beta$-VAE, KL annealing, semi-amortized inference) to trade off reconstruction, regularization, and latent structure in a more controlled way.
 
-So the lesson learned is that if you’re about to start a new research direction, start it with lots of assumptions.
-On one hand, it makes your life easier — on the other hand, others can later cite you when they relax them./s
+So the lesson learned is that if you’re about to start a new field, start it with lots of assumptions.
+On one hand, it makes your life easier — on the other, it gives everyone else plenty to do when they later relax them.
 
 ## 6. Conclusion
 
-A Variational Autoencoder really is a bit of a Frankenstein:
+Variational Autoencoder really is a bit of a Frankenstein:
 
 * It combines autoencoders, Bayesian latent variable models, variational inference, information theory, and a good amount of deep-learning engineering.
 * It relies on a stack of assumptions: i.i.d. data, a simple prior, Gaussian posteriors, specific likelihood families, mean-field factorization, and optimization via the ELBO.
 * It introduces extra machinery—like the KL divergence term and the reparameterization trick—just to make the whole system trainable end-to-end.
 
-But despite the scars and bolts, a VAE was one of the first serious steps toward modern generative AI.
+Just like transformers, it must be a combination of genius and hard work to make such complex models function at all.
+The amazing thing is that they do work—and time only proves that they can work even better:
 
 * It was one of the first scalable deep generative models.
 * It made latent-variable modeling practical for high-dimensional data such as images.
 * It inspired a whole ecosystem: β-VAE, VQ-VAE, hierarchical VAEs, flow-based VAEs, diffusion models, and more.
 
 Even though VAE is probably not the final answer, it was an important milestone—and I enjoyed learning about it.
-Postwriting, I somehow also feel slightly more educated and more intellectual than I did prior to this update.
-Now, time to stretch my arms and give my posterior a break.
-
+Postwriting, I almost feel as though I truly understand VAEs—or perhaps I pretended so well that I convinced even myself?
+In any case, it’s time to stretch my arms and give my posterior a break.
 
 {% include embed/youtube.html id='rhtadqkrWo0' %}
