@@ -197,10 +197,13 @@ Thus, the ELBO is a lower bound on the log evidence — hence the name Evidence 
 Prior, posterior, evidence, and now ELBO… Bayesians really like fancy (and sometimes intimidating) names.
 We'd better focus on what these things are, rather than get distracted by the terminology.
 
-For this reason, unlike many tutorials on VAE/VI, I don’t think “ELBO” deserves a section title.
-Forget about the “lower bound”—the name often feels like a label invented after the fact for convenience, 
-so stop pretending it represents the real insight behind VI optimization.
-You just need to remember:
+For this reason, unlike many tutorials on VAE/VI, I don’t think “ELBO” deserves a section title or a bold font.
+Frankly, I hate this name.
+I’d prefer to call the negative ELBO “free energy,” as in active inference — at least that gives me some inspiring insight.
+So forget about the “lower bound.” The name feels like a label invented after the fact,
+so let’s stop pretending it represents the real insight behind VI optimization.
+
+For now, just remember:
 
 $$
 \boxed{
