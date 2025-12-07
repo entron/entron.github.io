@@ -10,8 +10,10 @@ mermaid: false
 I have never encountered a problem that required a variational autoencoder (VAE) to solve.
 I hope I never will.
 
-However, everyone talks about VAEs, so I assume everyone must know it.
-Therefore, I decided to spend some time learning just enough about it so I can pretend I know it too.
+Still, everyone talks about VAEs.
+I hear about them so often it feels like everyone must be using them—or maybe everyone just thinks everyone else is using them, 
+so they keep talking about it?
+Anyway, I decided to spend some time learning just enough about it so I can comfortablly pretend I know it too.
 Below is my note based on discussion with ChatGPT.
 
 ---
@@ -127,9 +129,9 @@ Will VI save VAE? Let's explore.
 Start by writing the KL:
 
 $$
-D_{\mathrm{KL}}(q(z|x) \| p_\theta(z|x))
+D_{\mathrm{KL}}(q_\phi(z \mid x) \| p_\theta(z|x))
 =
-\mathbb{E}_{q(z|x)}\left[\log \frac{q(z|x)}{p_\theta(z|x)}\right].
+\mathbb{E}_{q_\phi(z \mid x)}\left[\log \frac{q_\phi(z \mid x)}{p_\theta(z|x)}\right].
 $$
 
 Expand $p_\theta(z \mid x)$ via Bayes’ rule:
@@ -143,8 +145,8 @@ Substitute:
 $$
 D_{\mathrm{KL}}
 =
-\mathbb{E}_{q(z|x)}\left[
-\log q(z|x)
+\mathbb{E}_{q_\phi(z \mid x)}\left[
+\log q_\phi(z \mid x)
 - \log p_\theta(x,z)
 + \log p_\theta(x)
 \right].
@@ -154,8 +156,8 @@ Distribute the expectation:
 
 $$
 D_{\mathrm{KL}} =
-\mathbb{E}_{q(z|x)}[\log q(z|x)]
-- \mathbb{E}_{q(z|x)}[\log p_\theta(x,z)]
+\mathbb{E}_{q_\phi(z \mid x)}[\log q_\phi(z \mid x)]
+- \mathbb{E}_{q_\phi(z \mid x)}[\log p_\theta(x,z)]
 + \log p_\theta(x).
 $$
 
@@ -165,12 +167,12 @@ $$
 \log p_\theta(x)
 =
 \underbrace{
-\mathbb{E}_{q(z|x)}[\log p_\theta(x,z)]
+\mathbb{E}_{q_\phi(z \mid x)}[\log p_\theta(x,z)]
 -
-\mathbb{E}_{q(z|x)}[\log q(z|x)]
+\mathbb{E}_{q_\phi(z \mid x)}[\log q_\phi(z \mid x)]
 }_{\text{ELBO}(x)}
 +
-D_{\mathrm{KL}}(q(z|x) \| p_\theta(z|x)).
+D_{\mathrm{KL}}(q_\phi(z \mid x) \| p_\theta(z|x)).
 $$
 
 Sooner than you might realise, we just got **the most imporant relation in VAE** with some simple math exploration.
@@ -182,7 +184,7 @@ $$
 =
 \text{ELBO}(x)
 +
-D_{\mathrm{KL}}(q(z|x) \| p_\theta(z|x))
+D_{\mathrm{KL}}(q_\phi(z \mid x) \| p_\theta(z|x))
 $$
 
 KL divergence is always ≥ 0. Therefore:
@@ -202,11 +204,11 @@ You just need to remember:
 
 $$
 \boxed{
-\log p_\theta(x) - D_{\mathrm{KL}}(q(z|x) \| p_\theta(z|x))
+\log p_\theta(x) - D_{\mathrm{KL}}(q_\phi(z \mid x) \| p_\theta(z|x))
 =
-\mathbb{E}_{q(z|x)}[\log p_\theta(x,z)]
+\mathbb{E}_{q_\phi(z \mid x)}[\log p_\theta(x,z)]
 -
-\mathbb{E}_{q(z|x)}[\log q(z|x)]
+\mathbb{E}_{q_\phi(z \mid x)}[\log q_\phi(z \mid x)]
 =
 \text{ELBO}(x).
 }
@@ -237,7 +239,7 @@ $$
 = 
 \log p_\theta(x)
 -
-D_{\mathrm{KL}}(q(z|x) \| p_\theta(z|x))
+D_{\mathrm{KL}}(q_\phi(z \mid x) \| p_\theta(z|x))
 $$
 
 Quickly I realized both terms are not calculatable. Actually, in VAE we use the terms on the other side of the equation:
@@ -296,7 +298,7 @@ $$
 the KL divergence has a known closed form:
 
 $$
-D_{\mathrm{KL}}(q | p)
+D_{\mathrm{KL}}(q \| p)
 =
 
 \frac{1}{2}
