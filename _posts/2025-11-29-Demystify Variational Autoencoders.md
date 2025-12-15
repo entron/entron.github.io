@@ -10,11 +10,10 @@ mermaid: false
 I have never encountered a problem that required a variational autoencoder (VAE) to solve.
 I hope I never will.
 
-Still, everyone talks about VAEs.
-I hear about them so often it feels like everyone must be using them—or maybe everyone just thinks everyone else is using them, 
-so they keep talking about it?
-Anyway, I decided to spend some time learning just enough about it so I can comfortablly pretend I know it too.
-Below is my note based on discussion with ChatGPT.
+They look complicated, and I generally try to avoid learning man-made, complicated concepts and models—like transformers—until it is absolutely necessary. As a result, I only really learned transformers eight years after their introduction, and only after ChatGPT was released ([see this post]({% post_url 2025-04-01-NanoGPT code map visualizing GPT architecture %})).
+
+For variational autoencoders, this delay is even longer, since they were introduced about 12 years ago.
+I hear about VAEs so often that I finally decided to spend some time learning just enough about them so that, when people talk about VAEs, I at least know what they mean. And in a world full of flying buzzwords, this also helps me quickly tell who is a real expert and who is just pretending.
 
 ---
 
@@ -197,13 +196,11 @@ Thus, the ELBO is a lower bound on the log evidence — hence the name Evidence 
 Prior, posterior, evidence, and now ELBO… Bayesians really like fancy (and sometimes intimidating) names.
 We'd better focus on what these things are, rather than get distracted by the terminology.
 
-For this reason, unlike many tutorials on VAE/VI, I don’t think “ELBO” deserves a section title or a bold font.
-Frankly, I hate this name.
-I’d prefer to call the negative ELBO “free energy,” as in active inference — at least that gives me some inspiring insight.
-So forget about the “lower bound.” The name feels like a label invented after the fact,
-so let’s stop pretending it represents the real insight behind VI optimization.
+For this reason, unlike many tutorials on VAE/VI, I don’t think ELBO deserves a section title or bold font.
+Frankly, I don’t like the name.
+I’d rather call the negative ELBO free energy, as in active inference, because that framing actually gives me some intuitive insight. By contrast, “lower bound” feels like a label invented after the fact, rather than something that represents the real insight behind variational inference optimization.
 
-For now, just remember:
+Therefore, just remember this relation:
 
 $$
 \boxed{
