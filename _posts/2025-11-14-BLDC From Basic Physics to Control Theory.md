@@ -18,6 +18,12 @@ In this article I document the theory part of what I have learnd with the help o
 
 ## 1. What Is a BLDC Motor?
 
+<div style="display:flex; gap:8px; justify-content:center; align-items:flex-start; flex-wrap:nowrap; margin: 8px 0 16px 0;">
+  <img src="/assets/2025/1756529866682.jpg" alt="BLDC photo 2" style="width:100%; height:auto; max-width:100%; border-radius:6px;" />
+  <img src="/assets/2025/1756530075008.jpg" alt="BLDC photo 3" style="width:100%; height:auto; max-width:100%; border-radius:6px;" />
+  <img src="/assets/2025/1756529850336.jpg" alt="BLDC photo 1" style="width:100%; height:auto; max-width:100%; border-radius:6px;" />
+</div>
+
 Brushless DC motors (BLDC motors) have quietly become one of the most important actuators of the modern world. They power drones, electric vehicles, camera gimbals, cooling fans, and increasingly, robotics of every scale. Despite the name, BLDC motors are not direct descendants of brushed DC motors—they are closer to small synchronous AC machines with permanent magnets, but driven by electronics that emulate DC motor behavior.
 
 Traditionally, a DC motor uses brushes and a commutator: a mechanical switch that changes the current direction inside the rotor as it spins. This guarantees that torque always pushes in the correct direction. A BLDC motor removes the brushes and the commutator entirely. Instead of switching current mechanically, the motor relies on an electronic controller that energizes the stator windings in the correct sequence.
