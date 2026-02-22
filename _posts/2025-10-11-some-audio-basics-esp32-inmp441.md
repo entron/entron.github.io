@@ -14,6 +14,8 @@ By building, I feel alive again.
 
 ---
 
+![My sound direction experiment](/assets/2025/sound_direction_exp.jpg)
+
 In this article for personal reference I will explain, step by step, the fundamental ideas behind digital audio, bit depth, decibels, headroom, and how they apply to the INMP441 I²S microphone and the ESP-IDF environment. 
 
 
