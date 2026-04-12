@@ -1,14 +1,21 @@
 ---
 layout: post
-title: "现实不能被糊弄：从费曼的挑战者号调查谈起对现代管理文化的反思"
+title: "Nature Cannot Be Fooled"
+description: "从费曼的挑战者号调查谈起对现代管理文化的反思"
 date: 2025-12-22 12:00:00
 categories: [Rednote]
 tags: [费曼, 工程, 管理]
 lang: zh
 ---
 
+> For a successful technology, reality must take precedence over public relations, for Nature cannot be fooled.
+> 
+> — Richard Feynman, Appendix F, Rogers Commission Report
+> 
 > “要让技术成功，现实必须优先于公关，因为自然不会被糊弄。”
+> 
 > ——理查德·费曼，《挑战者号调查报告附录 F》
+
 
 ## 一、费曼与“挑战者号”的教训，不只是一次事故
 
