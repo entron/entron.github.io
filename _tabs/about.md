@@ -11,5 +11,6 @@ Some other links of me:
 
 * [My Google Scholar](https://scholar.google.de/citations?user=d9zRCd8AAAAJ)
 * [SSB account](https://en.wikipedia.org/wiki/Secure_Scuttlebutt): @2AR2A8ytVZs0TN5h90tpA6nviSC1pfxKX8VSbc7TI0s=.ed25519
+* [Bluesky account](https://bsky.app/profile/9cheng.bsky.social): @9cheng.bsky.social
 * [My previous blog in Chinese](https://boke9cheng.wordpress.com/) (Most posts imported here)
 * [A blog dedicated to my Lego project](https://evolvingnxt.blogspot.com/) (All posts imported here)
