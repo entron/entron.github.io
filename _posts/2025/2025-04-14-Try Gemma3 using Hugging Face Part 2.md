@@ -6,7 +6,7 @@ math: false
 mermaid: false
 ---
 
-In [the first post of this series]({% post_url 2025-04-11-Try Gemma3 using Hugging Face Part 1 %}), we examined the specifications of the Gemma 3 model.
+In [the first post of this series]({% post_url 2025/2025-04-11-Try Gemma3 using Hugging Face Part 1 %}), we examined the specifications of the Gemma 3 model.
 In this post, we will actually run it and get an intuitive understanding of the inference process. I will assume you have read the first post.
 
 For each model size, there is a pre-trained (`pt`) version and an instruction-tuned (`it`) version.
@@ -338,7 +338,7 @@ What is the password?<end_of_turn>
 ```
 
 We can see the processor wraps the image tokens between `<start_of_image>` and `<end_of_image>`.
-Because the image has yet to be processed by the [`vision_tower`]({% post_url 2025-04-11-Try Gemma3 using Hugging Face Part 1 %}#vision_tower), the processor uses 256 `<image_soft_token>` tokens as placeholders for the moment.
+Because the image has yet to be processed by the [`vision_tower`]({% post_url 2025/2025-04-11-Try Gemma3 using Hugging Face Part 1 %}#vision_tower), the processor uses 256 `<image_soft_token>` tokens as placeholders for the moment.
 We can also infer that the `token_type_ids` mark these image soft tokens.  
 
 The `pixel_values` contain the loaded and preprocessed image, with the shape `[1, 3, 896, 896]`, which is what the `vision_tower` expects.

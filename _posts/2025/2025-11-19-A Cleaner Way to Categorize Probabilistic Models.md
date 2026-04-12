@@ -130,7 +130,7 @@ For distribution models, how do we sample from the learned distribution?
 * Axis 5: **Inference / training** 
 * Axis 6: **Primary Use / Function**
 
-The last two columns corresponde to Shu and Yong in [another post]({% post_url 2025-11-11-A Ti–Yong–Shu Map of Probabilistic Modeling %}). 
+The last two columns corresponde to Shu and Yong in [another post]({% post_url 2025/2025-11-11-A Ti–Yong–Shu Map of Probabilistic Modeling %}). 
 
 ### **Table: Categorizing Probabilistic Models**
 

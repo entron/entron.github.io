@@ -11,7 +11,7 @@ I tried out [Ollama](https://ollama.com/), which builds on top of [llama.cpp](ht
 It feels like Docker for LLMs—and I really love it.
 
 I also read [the technical report of Gemma 3](https://arxiv.org/abs/2503.19786) and some of the papers it cites, learning a ton in the process.  
-A lot of progress has been made since the days of GPT-2 ([nanoGPT]({% post_url 2025-04-01-NanoGPT code map visualizing GPT architecture %})).
+A lot of progress has been made since the days of GPT-2 ([nanoGPT]({% post_url 2025/2025-04-01-NanoGPT code map visualizing GPT architecture %})).
 
 Today, I experimented with running Gemma 3 via [Hugging Face](https://huggingface.co/docs/transformers/en/index) to get a deeper understanding of how it works.  
 Here’s a summary of what I did and discovered.
