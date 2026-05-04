@@ -15,7 +15,7 @@ Today I found some time to play with the Lego NXT, and I wrote the MATLAB versio
 
 The robot can now effectively avoid obstacles, and I don't need to help it get out of tight spots from time to time. The program can also plot the light sensor data while the robot moves around. However, it is very slow to find the light because it's a random walker, just like the Euglena.
 
-The code is [here](https://code.google.com/p/evolvingnxt/source/browse/euglena/random.m).
+The code is [here](https://github.com/entron/evolvingnxt/blob/master/euglena/random.m).
 
 Most of the code is straightforward, but there is one line that needs some explanation:
 
