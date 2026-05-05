@@ -10,6 +10,8 @@ The following blog post is drafted by ChatGPT based on my discussion on this top
 
 ---
 
+![Black Wukong](/assets/2026/blackwukong.jpeg)
+
 I have been working on a small hobby robot whose goal is intentionally modest: place it in a room, and it should move toward the brightest area it can find. Actually 16 years ago I built [such a robot with Lego]({% post_url lego/2010-10-24-random-walker-v3 %}). Now I want to build a "pro" version of it with STM32/ESP32. It does not need to recognize furniture. It does not need a map. It does not need to know what a “room” is. Ideally, it should behave more like a simple organism than a modern autonomous vehicle.
 
 The hardware is already fairly simple: an STM32 as the main controller, two rear drive motors, a front steering servo, wheel encoders, and an ESP32 for wireless communication and WebSocket-based remote control. The next obvious step is to add a few light sensors so the robot can compare brightness in different directions and move up the light gradient.
