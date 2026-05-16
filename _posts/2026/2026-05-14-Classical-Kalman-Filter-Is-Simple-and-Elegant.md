@@ -373,7 +373,7 @@ So the meaning is:
 
 $$
 \begin{equation}
-\boxed{\text{prediction uncertainty} = \text{propagated previous uncertainty} + \text{new model uncertainty}}
+\text{prediction uncertainty} = \text{propagated previous uncertainty} + \text{new model uncertainty}
 \label{eq:prediction-uncertainty-meaning}
 \end{equation}
 $$
@@ -409,7 +409,7 @@ The dynamic model allows information from the past to remain useful in the prese
 
 ---
 
-## 5. Kalman gain and innovation/residual
+## 5. Kalman Gain and Innovation/Residual
 
 We have already learned the essence of the Kalman filter. However, I cannot stop here because there are still a few more important points to cover before we can say we have really understood the Kalman filter. Let us first start with the terminology.
 
