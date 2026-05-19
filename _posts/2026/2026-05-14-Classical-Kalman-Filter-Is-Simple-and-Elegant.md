@@ -261,17 +261,7 @@ $$
 We have the uncertainty of the previous estimate, and we have the uncertainty introduced by the prediction model. How can we combine them to get the variance of the virtual sensor, that is, the variance of the predicted state $P_{k|k-1}$?
 Let's find this out next.
 
-At time $k-1$, we do not know the true $x_{k-1}$. We only have an estimate:
-
-$$
-\begin{equation}
-\hat{x}_{k-1|k-1}
-\label{eq:prior-estimate-repeat}
-\end{equation}
-$$
-
-
-Now we predict the next state using the model:
+At time $k-1$, we predict the next state using the model:
 
 $$
 \begin{equation}
