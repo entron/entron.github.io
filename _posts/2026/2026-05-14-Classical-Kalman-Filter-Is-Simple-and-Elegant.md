@@ -10,7 +10,7 @@ mermaid: false
 
 Kalman filtering often looks intimidating at first. Many introductions start with matrix equations, state-space models, Gaussian distributions, and recursive Bayesian estimation. All of that is correct, but it can hide a very simple idea:
 
-A Kalman filter is a principled way to combine uncertain information.
+*A Kalman filter is a principled way to combine uncertain information.*
 
 I am writing this to help myself, and hopefully my dear reader, quickly grasp the core idea of the Kalman filter.
 
@@ -32,7 +32,7 @@ z = x + v
 $$
 
 
-If the noise is [Gaussian](https://en.wikipedia.org/wiki/Normal_distribution) which has zero mean and variance $R$, we can write:
+If the noise is [Gaussian](https://en.wikipedia.org/wiki/Normal_distribution) which has zero mean and [variance](https://en.wikipedia.org/wiki/Variance) $R$, we can write:
 
 $$
 \begin{equation}
@@ -52,11 +52,11 @@ $$
 \end{equation}
 $$
 
-The uncertainty of this estimate is just the sensor variance:
+We denote an estimate's uncertainty by $P$: specifically, $P$ is the variance of its estimation error. For this single sensor, the uncertainty is just the sensor variance:
 
 $$
 \begin{equation}
-P = R
+P = \mathrm{Var}(x-\hat{x}) = R
 \label{eq:one-sensor-variance}
 \end{equation}
 $$
@@ -67,8 +67,8 @@ But things become more interesting when we have more than one source of informat
 
 ## 2. Two Sensors: The Wisdom of the Crowd
 
-What if we are not satisfied with the sensor's accuracy and we want a better estimate of $x$? One straightforward way is to measure multiple times if $x$ is fixed and then average the measurements.
-In practice, this is seldom the case. Instead, $x$ is changing all the time and we want to have an accurate measurement at every time point. What we can do is add more sensors and measure simultaneously, then average them. We use the wisdom of the crowd to get a better estimation.
+What if we are not satisfied with the sensor's accuracy and we want a better estimate of the car's position $x$? One straightforward way is to measure multiple times if $x$ is fixed and then average the measurements.
+In practice, this is seldom the case. Instead, $x$ is changing all the time and we want to have an accurate estimate of the car's position at *every* time point. What we can do is add more sensors and measure simultaneously, then average them. We use the wisdom of the crowd to get a better estimation.
 
 Now suppose we have two sensors measuring the same quantity $x$:
 
@@ -218,7 +218,7 @@ Therefore, it is a waste to ignore this historical information.
 What the Kalman filter effectively does is recycle the previous information and transform it into a virtual sensor without adding a real second sensor. The virtual sensor's "reading" is a dynamic model prediction based on past information.
 
 
-Imagine we are tracking the position of a car over time. At time $k-1$, we already have an estimate of the car's state. For simplicity, assume the state is just position:
+Returning to our car-position example, at time $k-1$, we already have an estimate of the car’s position:
 
 $$
 \begin{equation}
@@ -240,6 +240,8 @@ P_{k-1|k-1}
 \end{equation}
 $$
 
+Here $P_{k-1 \mid k-1}$ denotes the estimation-error variance at time $k-1$, after incorporating all measurements up to and including time $k-1$. 
+
 Now time moves forward. We want to estimate the current state $x_k$. If we have a dynamic model, we can predict the current state from the previous one. In the simplest case, the current state is just a linear transformation of the previous state:
 
 $$
@@ -249,19 +251,16 @@ x_k = a x_{k-1} + w_k
 \end{equation}
 $$
 
-where $w_k$ is the process noise, with
+where $w_k$ is the process noise, assumed to have zero mean and variance $Q$:
 
 $$
 \begin{equation}
-\mathrm{Var}(w_k)=Q
+\mathbb{E}[w_k]=0, \qquad \mathrm{Var}(w_k)=Q
 \label{eq:process-noise}
 \end{equation}
 $$
 
-We have the uncertainty of the previous estimate, and we have the uncertainty introduced by the prediction model. How can we combine them to get the variance of the virtual sensor, that is, the variance of the predicted state $P_{k|k-1}$?
-Let's find this out next.
-
-At time $k-1$, we predict the next state using the model:
+The process noise $w_k$ represents an unpredictable change in the true state. Because its value is unknown and its expected value is zero, it does not appear in the predicted state. Its uncertainty is instead accounted for by $Q$:
 
 $$
 \begin{equation}
@@ -270,87 +269,8 @@ $$
 \end{equation}
 $$
 
-The prediction error is:
-
-$$
-\begin{equation}
-x_k-\hat{x}_{k|k-1}
-\label{eq:scalar-prediction-error}
-\end{equation}
-$$
-
-Substitute the true dynamics and the predicted estimate:
-
-$$
-\begin{equation}
-x_k-\hat{x}_{k|k-1}
-=
-(a x_{k-1}+w_k)-a\hat{x}_{k-1|k-1}
-\label{eq:scalar-prediction-error-substituted}
-\end{equation}
-$$
-
-Factor out $a$:
-
-$$
-\begin{equation}
-x_k-\hat{x}_{k|k-1}
-=
-a(x_{k-1}-\hat{x}_{k-1|k-1})+w_k
-\label{eq:scalar-prediction-error-factored}
-\end{equation}
-$$
-
-Now take the variance on both sides:
-
-$$
-\begin{equation}
-P_{k|k-1}
-=
-\mathrm{Var}\left(a(x_{k-1}-\hat{x}_{k-1|k-1})+w_k\right)
-\label{eq:scalar-prediction-variance-before-rule}
-\end{equation}
-$$
-
-Using the variance rule we derived in the Appendix:
-
-$$
-\begin{equation}
-\mathrm{Var}(aX+Y)
-=
-a^2\mathrm{Var}(X)+\mathrm{Var}(Y)+2a\,\mathrm{Cov}(X,Y)
-\label{eq:variance-rule-two-variables}
-\end{equation}
-$$
-
-Here:
-
-$$
-\begin{equation}
-X=x_{k-1}-\hat{x}_{k-1|k-1}
-\label{eq:variance-rule-x}
-\end{equation}
-$$
-
-and
-
-$$
-\begin{equation}
-Y=w_k
-\label{eq:variance-rule-y}
-\end{equation}
-$$
-
-So we have:
-
-$$
-\begin{equation}
-P_{k|k-1} = a^2P_{k-1|k-1} + Q + 2a\,\mathrm{Cov}(x_{k-1}-\hat{x}_{k-1|k-1}, w_k)
-\label{eq:scalar-prediction-variance-with-covariance}
-\end{equation}
-$$
-
-The standard Kalman filter assumes the process noise $w_k$ is independent of the previous estimation error, so the covariance term is zero. Therefore:
+We have the uncertainty of the previous estimate $P_{k-1 \mid k-1}$, and we have the uncertainty introduced by the prediction model $Q$. How can we combine them to get the variance of the virtual sensor, that is, the variance of the predicted state $P_{k \mid k-1}$?
+Here, I will give only the result; see Appendix B for the derivation:
 
 $$
 \begin{equation}
@@ -368,9 +288,7 @@ $$
 \end{equation}
 $$
 
-The $a^2P_{k-1|k-1}$ part comes from uncertainty already present at time $k-1$.
-The $Q$ part comes from the new uncertainty introduced by the imperfect dynamic model during the transition from time $k-1$ to time $k$.
-
+The $a^2P_{k-1 \mid k-1}$ term comes from uncertainty already present at time $k-1$. The $Q$ term comes from new uncertainty introduced by the imperfect dynamic model during the transition to time $k$.
 
 We combine the real sensor and the virtual sensor using uncertainty-weighted fusion exactly like the two-sensor problem:
 
@@ -393,7 +311,6 @@ This finishes one time-step update of the Kalman filter, and we can move on to t
 
 
 So the Kalman filter is doing something extremely natural: It fuses the current real measurement with a prediction generated from historical information and a dynamic model.
-
 The dynamic model allows information from the past to remain useful in the present. Without the model, the previous estimate would simply be an estimate of the past. With the model, it becomes a prediction of the present.
 
 
@@ -401,7 +318,7 @@ The dynamic model allows information from the past to remain useful in the prese
 
 ## 5. Kalman Gain and Innovation/Residual
 
-We have already learned the essence of the Kalman filter. However, I cannot stop here because there are still a few more important points to cover before we can say we have really understood the Kalman filter. Let us first start with the terminology.
+We now have the core idea of the Kalman filter. Let us introduce a few standard terms and equations.
 
 The **Kalman gain** $K_k$ is standard terminology in the Kalman filter. It is simply a convenient reparameterization of the scalar fusion equation in \eqref{eq:scalar-kalman-fusion}.
 Starting from the fused estimate, we can rewrite it as:
@@ -554,7 +471,7 @@ Of course, the classical Kalman filter has limitations. It assumes linear dynami
 
 ---
 
-## Appendix: Variance of a Linear Combination
+## Appendix A: Variance of a Linear Combination
 
 In deriving \eqref{eq:two-sensor-variance-as-function-of-w}, we implicitly used a standard relation for the variance of a linear combination of random variables. Here is the proof.
 
@@ -709,3 +626,68 @@ w^2R_1+(1-w)^2R_2
 \label{eq:sensor-case-variance}
 \end{equation}
 $$
+
+---
+
+## Appendix B: Derivation of the Scalar Prediction Variance
+
+The prediction error is:
+
+$$
+\begin{equation}
+x_k-\hat{x}_{k|k-1}
+\label{eq:scalar-prediction-error}
+\end{equation}
+$$
+
+Substituting the true dynamics and the predicted estimate gives:
+
+$$
+\begin{equation}
+x_k-\hat{x}_{k|k-1}
+=
+(a x_{k-1}+w_k)-a\hat{x}_{k-1|k-1}
+\label{eq:scalar-prediction-error-substituted}
+\end{equation}
+$$
+
+Factoring out $a$ gives:
+
+$$
+\begin{equation}
+x_k-\hat{x}_{k|k-1}
+=
+a(x_{k-1}-\hat{x}_{k-1|k-1})+w_k.
+\label{eq:scalar-prediction-error-factored}
+\end{equation}
+$$
+
+Taking the variance of both sides:
+
+$$
+\begin{equation}
+P_{k|k-1}
+=
+\mathrm{Var}\left(a(x_{k-1}-\hat{x}_{k-1|k-1})+w_k\right)
+\label{eq:scalar-prediction-variance-before-rule}
+\end{equation}
+$$
+
+Using the variance rule from Appendix A, with
+
+$$
+\begin{equation}
+X=x_{k-1}-\hat{x}_{k-1|k-1}, \qquad Y=w_k,
+\end{equation}
+$$
+
+gives:
+
+$$
+\begin{equation}
+P_{k|k-1} = a^2P_{k-1|k-1} + Q + 2a\,\mathrm{Cov}(x_{k-1}-\hat{x}_{k-1|k-1}, w_k).
+\label{eq:scalar-prediction-variance-with-covariance}
+\end{equation}
+$$
+
+The standard Kalman filter assumes the process noise $w_k$ is independent of the previous estimation error, so the covariance term is zero. Therefore, we obtain Eq. \eqref{eq:scalar-prediction-variance}.
